@@ -11,7 +11,73 @@
     box-sizing: border-box;
 }
 body {
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     background-color: var(--accent-color2);
     color: var(--color-primary);
+}
+
+.obj-box {
+    width: 1200px;
+    margin: auto;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--accent-color1);
+}
+.profile img{
+    width: 100px;
+    border-radius: 5px;
+}
+.card2 img{
+    width: 100%;
+    border-radius: 5px;
+}
+.profile h1{
+    margin-left: 30px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav li a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-color2);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    margin: 7rem;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem;
+    gap: 10px;
+}
+main h2{
+    background-color: var(--accent-color1);
+}
+.card1 {
+    background: var(--accent-color2);
+    grid-column: 1/2;
+}
+.card2 {
+    background: var(--accent-color2);
+    width: 60%;
+    grid-column: 2/3;
+}
+.card3 {
+    background: var(--accent-color2);
+    grid-column: 1/3;
 }
