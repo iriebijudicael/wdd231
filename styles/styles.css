@@ -37,6 +37,7 @@ body {
 #menu-bar{
     display: none;
 }
+
 #card-2 img{
     max-width: 100%;
     height: 40vh;
@@ -68,7 +69,7 @@ nav li a {
     text-decoration: none;
     
 }
-header li a:hover {
+nav li a:hover {
     background-color: var(--accent-color3);
     border: 5px solid var(--accent-color3);
     border-radius: 5px;
@@ -163,12 +164,19 @@ footer {
 
 @media (max-width: 768px) {
     #menu-bar{
-        display: flex;
+        display: block;
         font-size: 2rem;
         margin: 10px;
         position: absolute;
         top: 0;
         right: 5px;
+    }
+    #nav-menu.active {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
     .profile img {
         width: 80px;
