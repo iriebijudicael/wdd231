@@ -69,7 +69,7 @@ nav li a {
     text-decoration: none;
     
 }
-nav li a:hover {
+a:hover {
     background-color: var(--accent-color3);
     border: 5px solid var(--accent-color3);
     border-radius: 5px;
