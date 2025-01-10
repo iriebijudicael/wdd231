@@ -69,7 +69,11 @@ nav li a {
     text-decoration: none;
     
 }
-
+ul a:hover {
+    background-color: var(--accent-color3);
+    border: 5px solid var(--accent-color3);
+    border-radius: 5px;
+}
 main ul {
     padding: 2rem;
 }
