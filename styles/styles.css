@@ -196,7 +196,7 @@ footer {
 @media (max-width: 768px) {
     #hamburger{
         display: block;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 10px;
         position: absolute;
         top: 0;
@@ -220,10 +220,11 @@ footer {
 
     .nav-links {
         flex-direction: column;
-       
+        text-align: center;
     }
-    .nav-links li {
-        padding: 50px 0;
+
+    .profile h1 {
+        font-size: 3rem;
     }
     .profile {
         padding: 4rem;
@@ -234,7 +235,6 @@ footer {
     }
     .nav-links a {
         color: white;
-        align-items: center;
         text-decoration: none;
         font-size: 1.5rem;
     }
@@ -276,18 +276,22 @@ footer {
         width: 80px;
         height: 80px;
     }
-    h1 {
-        font-size: 1.5rem;
+    .profile h1 {
+        font-size: 2rem;
     }
     h2 {
         font-size: 1.2rem;
     }
     #navbar {
-        top: 33%;
+        top: 35%;
         right: 0;
     }
     .nav-links li {
-        margin: 10px 0;
+        margin: 5px 0;
+    }
+    .nav-links a {
+        font-size: 1.2rem;
+        line-height: 5px;
     }
     main {
         padding: 10px;
