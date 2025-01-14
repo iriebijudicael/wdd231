@@ -21,6 +21,7 @@ body {
     padding: 2vw 2vw 0 2vw;
     margin: auto;
 }
+
 .profile {
     display: flex;
     align-items: center;
@@ -34,9 +35,45 @@ body {
     box-shadow: 5px 5px 10px #6f7364; 
     border-radius: 5px;
 }
-#menu-bar{
-    display: none;
+
+.profile h1 {
+    font-size: 24px;
 }
+
+#hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; 
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 0;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+}
+
+
 
 #card-2 img{
     max-width: 100%;
@@ -47,15 +84,9 @@ body {
 .profile h1{
     margin-left: 30px;
 }
-nav ul {
-    display: flex;
-    align-items: center;
-    background-color: var(--color-primary);
-    list-style: none;
-    cursor: pointer;
-    padding: 20px 0;
-}
-nav ul li {
+
+
+.nav-links li {
     padding: 0.5rem 1.5rem;
     margin-left: 9rem;
 }
@@ -67,12 +98,13 @@ nav li a {
     align-items: center;
     text-align: center;
     text-decoration: none;
-    
+    transition: color 0.3s ease;
+    padding: 8px 20px;
 }
-ul a:hover {
+.nav-links a:hover {
     background-color: var(--accent-color3);
-    border: 5px solid var(--accent-color3);
     border-radius: 5px;
+    
 }
 main ul {
     padding: 2rem;
@@ -157,33 +189,56 @@ footer {
     text-align: center;
     padding: 4rem;
     width: 100%;
-}#menu-bar{
-    display: none;
-    font-size: 2.5rem;
 }
 
+
+
 @media (max-width: 768px) {
-    #menu-bar{
+    #hamburger{
         display: block;
         font-size: 2rem;
         margin: 10px;
         position: absolute;
         top: 0;
         right: 5px;
+        cursor: pointer;
     }
-    #nav-menu.active {
-        display: block;
+
+    #navbar {
+        display: none; /* Hide the navbar by default on smaller screens */
+        position: absolute;
+        top: 22%;
+        right: 0;
+        background-color: var(--color-primary);
+        width: 100%;
+        border-radius: 5px;
     }
-    nav ul {
+
+    #navbar.active {
+        display: block; /* Show the navbar when active */
+    }
+
+    .nav-links {
         flex-direction: column;
-        gap: 10px;
+       
+    }
+    .nav-links li {
+        padding: 50px 0;
+    }
+    .profile {
+        padding: 4rem;
     }
     .profile img {
         width: 80px;
         height: 80px;
     }
-    nav ul {
-        display: none;
+    .nav-links a {
+        color: white;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        
+        
     }
     .course-list {
         display: grid;
@@ -229,8 +284,12 @@ footer {
     h2 {
         font-size: 1.2rem;
     }
-    nav ul li {
-        margin: 5px 0;
+    #navbar {
+        top: 33%;
+        right: 0;
+    }
+    .nav-links li {
+        margin: 10px 0;
     }
     main {
         padding: 10px;
