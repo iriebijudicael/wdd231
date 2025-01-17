@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber Of Commerce</title>
+    <meta name="description" content="Explore the directory of local businesses and members of the Chamber of Commerce">
+    <meta name="author" content="Irie Judicael Elvis">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.drupal.org/files/issues/2020-02-25/favicon-v3.png">
+    <meta property="og:url" content="https://iriebijudicael.github.io/wdd231//directory.html">
+    
+    <!-- Normalize CSS -->
+     <link rel="stylesheet" href="styles/directory.css">
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="images/favicon-v3.png" alt="Chamber of Commerce Logo">
+            <h1>Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Member Directory</h2>
+        <div class="view-toggle">
+            <button id="grid-view"><i class="ri-layout-grid-2-fill"></i>Grid View</button>
+            <box-icon type='solid' name='grid'></box-icon>
+            <button id="list-view"><i class="ri-list-check"></i>List View</button>
+        </div>
+        <div class="directory" id="directory">
+            <!-- Member cards will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>Chamber of Commerce | Irie Judicael Elvis | WDD 230</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>
