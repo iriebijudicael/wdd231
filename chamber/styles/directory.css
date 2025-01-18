@@ -1,3 +1,11 @@
+:root {
+    --color-primary: #1d347A;
+    --color-secondary: #7382AD;
+    --accent-color1: #C7B7B3;
+    --accent-color2: #F2ECE8;
+    --accent-color3: #ff6f61;
+}
+
 /* General Styles */
 * {
     margin: 0;
@@ -6,20 +14,24 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", serif;
     line-height: 1.6;
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: var(--color-secondary);
     color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+h1, h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
 .logo {
     display: flex;
     align-items: center;
@@ -56,28 +68,6 @@ header {
     margin: 4px 0;
 }
 
-/* Responsive Navigation */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 200px;
-        padding: 10px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-}
-
 /* Directory Styles */
 .view-toggle {
     margin: 20px 0;
@@ -94,14 +84,14 @@ header {
     cursor: pointer;
 }
 
-.directory {
+#directory {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-.directory.list-view {
+#directory.list-view {
     display: block;
 }
 
@@ -117,13 +107,95 @@ header {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+#directory .member-card > * {
+	margin: 0.1rem;
+}
+
+.list-view {
+	display: flex;
+    width: 95%;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/*.list-view {
+	display: grid;
+    flex-direction: column;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}*/
+.list-view img {
+	display: none;
+}
+
+.list-view > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list-view:nth-child(even) {
+	background-color: #bed;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: var(--color-secondary);
     color: #fff;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--color-primary);
+        position: absolute;
+        top: 8%;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        padding: 10px 0;
+    }
+    .nav-links a {
+       font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        top: 19%;
+    }
+    .list-view {
+       display: block;
+    }
+
 }

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Business One",
+        "address": "123 Main St, City, Country",
+        "phone": "+123 456 7890",
+        "image": "business1.jpg",
+        "membership": "Gold",
+        "website": "https://businessone.com"
+    },
+    {
+        "name": "Business Two",
+        "address": "456 Elm St, City, Country",
+        "phone": "+123 456 7891",
+        "image": "business2.jpg",
+        "membership": "Silver",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "Business Three",
+        "address": "789 Oak St, City, Country",
+        "phone": "+123 456 7892",
+        "image": "business3.jpg",
+        "membership": "Member",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "Business Four",
+        "address": "101 Pine St, City, Country",
+        "phone": "+123 456 7893",
+        "image": "business4.jpg",
+        "membership": "Gold",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "Business Five",
+        "address": "202 Maple St, City, Country",
+        "phone": "+123 456 7894",
+        "image": "business5.jpg",
+        "membership": "Silver",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "Business Six",
+        "address": "303 Cedar St, City, Country",
+        "phone": "+123 456 7895",
+        "image": "business6.jpg",
+        "membership": "Member",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "Business Seven",
+        "address": "404 Birch St, City, Country",
+        "phone": "+123 456 7896",
+        "image": "business7.jpg",
+        "membership": "Gold",
+        "website": "https://businesstwo.com"
+    }
+]
