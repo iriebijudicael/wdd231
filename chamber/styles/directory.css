@@ -102,9 +102,9 @@ button {
 
 #directory {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
+    padding: 50px;
 }
 
 #directory.list-view {
@@ -180,8 +180,10 @@ footer {
     .hamburger {
         display: flex;
     }
-    .directory {
-        padding: 5px;
+    #directory {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
     }
     .member-card {
         box-shadow: 5px 5px 5px var(--accent-color1);
@@ -210,8 +212,10 @@ footer {
 
 
 @media (max-width: 480px) {
-    .directory {
-        padding: 5px;
+    #directory {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: 1fr;
     }
     .nav-links {
         flex-direction: column;
