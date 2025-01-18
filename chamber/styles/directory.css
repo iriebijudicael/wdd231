@@ -131,7 +131,7 @@ button:hover {
 .member-card img {
     width: 80%;
     height: 25vh;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 10px;
     border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
