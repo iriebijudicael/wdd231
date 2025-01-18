@@ -67,8 +67,17 @@ button {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 20px 30px;
+    transition: all 0.3s ease;
 }
-
+a:hover {
+    color: #fff;
+    background: var(--accent-color3);
+}
+button:hover {
+    color: #fff;
+    background: var(--accent-color3);
+}
 .hamburger {
     display: none;
     flex-direction: column;
