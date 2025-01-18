@@ -3,15 +3,15 @@
         "name": "Business One",
         "address": "123 Main St, City, Country",
         "phone": "+123 456 7890",
-        "image": "business1.jpg",
+        "image": "photo-1.webp",
         "membership": "Gold",
-        "website": "https://businessone.com"
+        "website": "https://www.goafricaonline.com/ci/annuaire/startup"
     },
     {
         "name": "Business Two",
         "address": "456 Elm St, City, Country",
         "phone": "+123 456 7891",
-        "image": "business2.jpg",
+        "image": "photo-2.webp",
         "membership": "Silver",
         "website": "https://businesstwo.com"
     },
@@ -19,7 +19,7 @@
         "name": "Business Three",
         "address": "789 Oak St, City, Country",
         "phone": "+123 456 7892",
-        "image": "business3.jpg",
+        "image": "photo-3.webp",
         "membership": "Member",
         "website": "https://businesstwo.com"
     },
@@ -27,7 +27,7 @@
         "name": "Business Four",
         "address": "101 Pine St, City, Country",
         "phone": "+123 456 7893",
-        "image": "business4.jpg",
+        "image": "photo-4.webp",
         "membership": "Gold",
         "website": "https://businesstwo.com"
     },
@@ -35,7 +35,7 @@
         "name": "Business Five",
         "address": "202 Maple St, City, Country",
         "phone": "+123 456 7894",
-        "image": "business5.jpg",
+        "image": "photo-5.webp",
         "membership": "Silver",
         "website": "https://businesstwo.com"
     },
@@ -43,7 +43,7 @@
         "name": "Business Six",
         "address": "303 Cedar St, City, Country",
         "phone": "+123 456 7895",
-        "image": "business6.jpg",
+        "image": "photo-6.webp",
         "membership": "Member",
         "website": "https://businesstwo.com"
     },
@@ -51,7 +51,7 @@
         "name": "Business Seven",
         "address": "404 Birch St, City, Country",
         "phone": "+123 456 7896",
-        "image": "business7.jpg",
+        "image": "photo-7.webp",
         "membership": "Gold",
         "website": "https://businesstwo.com"
     }
