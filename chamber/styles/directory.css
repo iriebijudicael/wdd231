@@ -100,8 +100,8 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
-    margin: 30px 60px;
+    padding: 20px 60px;
+    flex-wrap: wrap;
 }
 
 #directory.list-view {
