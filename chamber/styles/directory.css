@@ -1,9 +1,9 @@
 :root {
     --color-primary: #1d347A;
-    --color-secondary: #7382AD;
+    --color-secondary: #319e85;
     --accent-color1: #C7B7B3;
     --accent-color2: #F2ECE8;
-    --accent-color3: #ff6f61;
+    --accent-color3: #ba1708;
 }
 
 /* General Styles */
@@ -51,14 +51,26 @@ h2 {
     height: 50px;
 }
 
+.btn {
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
 button {
     background-color: var(--color-primary);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    border-radius: 8px;
+    padding: 8px 20px;
     cursor: pointer;
 }
 .nav-links {
+    align-items: center;
     list-style: none;
     display: flex;
     gap: 20px;
