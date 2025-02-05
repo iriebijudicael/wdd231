@@ -1,4 +1,4 @@
-// Toggle Navigation Menu
+// Toggle hamburger menu
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
@@ -8,7 +8,7 @@ hamburger.addEventListener('click', () => {
 
 // Fetch Members Data
 async function fetchMembers() {
-    const response = await fetch('data/members.json');
+    const response = await fetch('data/members-2.json');
     const data = await response.json();
     return data;
 }
@@ -31,8 +31,7 @@ async function displayMembers(view = 'grid') {
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <p>Membership Level: ${member.membership}</p>
-            <p><a href="${member.website}" target="_blank">Visit Website</a></p>
-        `;
+            <p><a href="${member.website}" target="_blank">Visit Website</a></p>`;
 
         directory.appendChild(card);
     });
@@ -59,3 +58,5 @@ document.getElementById('lastModified').textContent = `Last Modified: ${lastModi
 
 // Initial Load
 displayMembers();
+
+
