@@ -1,0 +1,75 @@
+
+{
+    "city": {
+      "name": "Abidjan",
+      "country": "CI",
+      "sunrise": 1698206400, 
+      "sunset": 1698249600   
+    },
+    "list": [
+      {
+        "dt": 1698206400, 
+        "main": {
+          "temp": 28,     
+          "humidity": 75 
+        },
+        "weather": [
+          {
+            "description": "clear sky",
+            "icon": "01d" 
+          }
+        ],
+        "wind": {
+          "speed": 2.5   
+        }
+      },
+      {
+        "dt": 1698292800, 
+        "main": {
+          "temp": 29,
+          "humidity": 70
+        },
+        "weather": [
+          {
+            "description": "few clouds",
+            "icon": "02d"
+          }
+        ],
+        "wind": {
+          "speed": 3.0
+        }
+      },
+      {
+        "dt": 1698379200,
+        "main": {
+          "temp": 30,
+          "humidity": 65
+        },
+        "weather": [
+          {
+            "description": "scattered clouds",
+            "icon": "03d"
+          }
+        ],
+        "wind": {
+          "speed": 3.5
+        }
+      },
+      {
+        "dt": 1698465600, 
+        "main": {
+          "temp": 27,
+          "humidity": 80
+        },
+        "weather": [
+          {
+            "description": "light rain",
+            "icon": "10d"
+          }
+        ],
+        "wind": {
+          "speed": 2.0
+        }
+      }
+    ]
+  }

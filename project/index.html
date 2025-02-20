@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-zappe</title>
+    <meta name="description" content="Come find a good second heands products or get the possibility of item's change to low coast">
+    <meta name="author" content="Irie Judicael Elvis">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="X-zappe">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3665/3665917.png">
+    <meta property="og:url" content="https://iriebijudicael.github.io/wdd231/chamber/index.html">
+    
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?900&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo-icon" src="images/logo4.png" alt="Logo icon">
+            <h1>E-zappe</h1>
+        </div>
+        
+        <form method="post" action="login.php">
+            <input type="text" class="search" placeholder="Search">
+            <i id="search" class="ri-search-line"></i>
+            <button><i class="ri-user-2-line"></i>Login</button>
+            <button><i class="ri-user-2-line"></i>Sign Up</button>
+        </form>
+        <i id="hamburger" class="ri-menu-line"></i>  
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div>News</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Breaking News: Major Event Happens Today</h1>
+                <p>Stay updated with the latest news from around the world.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <!-- Weather App Aside the Hero -->
+            <div class="weather">
+                <div class="weather-info">
+                    <h2>Current Weather</h2>
+                    <img id="weatherIcon" src="" alt="Weather Icon">
+                    <p id="currentTemp"></p>
+                    <p id="captionDesc"></p>
+                    <p id="weatherCondition"></p>
+                    <p id="windSpeed"></p>
+                    <p id="humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                    <div id="weather-spotlight-cards"></div>
+                </div>
+            </div>
+            
+            
+        </section>
+  
+        <!-- Trending News Section -->
+        <section class="trending">
+            <h2>Trending News</h2>
+            <div class="trending-grid" id="trending-grid">
+                <!-- Trending news cards will be dynamically inserted here -->
+            </div>
+        </section>
+  
+        <!-- Editor's Choice Section -->
+        <section class="editors-choice">
+            <h2>Editor's Choice</h2>
+            <div class="editors-grid" id="editors-grid">
+              <!-- Editor's choice cards will be dynamically inserted here -->
+            </div>
+        </section>
+  
+        <!-- Advertisement Section -->
+        <marquee class="advertisement">
+            <img src="images/ad-banner.jpg" alt="Advertisement Banner1">
+            <img src="images/ad-banner.jpg" alt="Advertisement Banner2">
+            <img src="images/ad-banner.jpg" alt="Advertisement Banner3">
+            <img src="images/ad-banner.jpg" alt="Advertisement Banner4">
+        </marquee>
+  
+        <!-- Recent Videos Section -->
+        <section class="recent-videos">
+            <h2>Recent Videos</h2>
+            <div class="video-container">
+                <video class="main-video" width="400" controls>
+                    <source src="images/videoplayback (2).mp4" type="video/mp4">
+                </video>
+                <div class="video-sidebar">
+                    <video class="video-thumbnail" width="200" controls>
+                      <source src="images/videoplayback (2).mp4" alt="Video/mp4">
+                      <p>Video Title 1</p>
+                    </video>
+                    <video class="video-thumbnail" width="200" controls>
+                      <source src="images/videoplayback (2).mp4" alt="Video/mp4">
+                      <p>Video Title 2</p>
+                    </video>
+                    <video class="video-thumbnail" width="200" controls>
+                      <source src="images/videoplayback (2).mp4" alt="Video/mp4">
+                      <p>Video Title 3</p>
+                    </video>
+                    <video class="video-thumbnail" width="200" controls>
+                      <source src="images/videoplayback (2).mp4" alt="Video/mp4">
+                      <p>Video Title 4</p>
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+  
+    
+  
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 NewsHub. All rights reserved.</p>
+    </footer>
+  
+    <!-- JavaScript -->
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>

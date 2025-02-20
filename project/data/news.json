@@ -1,0 +1,60 @@
+{
+    "trending": [
+      {
+        "image": "../images/stockphoto.jpg",
+        "title": "Trending News 1",
+        "description": "This is the first trending news article."
+      },
+      {
+        "image": "../images/food.jpg",
+        "title": "Trending News 2",
+        "description": "This is the second trending news article."
+      },
+      {
+        "image": "../images/adoption.jpg",
+        "title": "Trending News 3",
+        "description": "This is the first trending news article."        
+      },
+      {
+        "image": "../images/stockphoto.jpg",
+        "title": "Trending News 4",
+        "description": "This is the second trending news article."
+      },
+      {
+        "image": "../images/stockphoto.jpg",
+        "title": "Trending News 5",
+        "description": "This is the second trending news article."
+      },
+      {
+        "image": "../images/stockphoto.jpg",
+        "title": "Trending News 6",
+        "description": "This is the second trending news article."
+      }
+    ],
+    "editorsChoice": [
+      {
+        "name": "Editor 1",
+        "image": "editor1.jpg"
+      },
+      {
+        "name": "Editor 2",
+        "image": "editor2.jpg"
+      },
+      {
+        "name": "Editor 3",
+        "image": "editor3.jpg"
+      },
+      {
+        "name": "Editor 4",
+        "image": "editor4.jpg"
+      },
+      {
+        "name": "Editor 5",
+        "image": "editor5.jpg"
+      },
+      {
+        "name": "Editor 6",
+        "image": "editor6.jpg"
+      }
+    ]
+  }

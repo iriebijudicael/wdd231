@@ -240,7 +240,7 @@ footer {
     }
     .course-list {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat();
     }
     h1 {
         font-size: 2.5rem;

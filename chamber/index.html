@@ -61,18 +61,31 @@
                     <li></li>
                 </ul>
             </div>
-                
-            <div id="weather">
-                <h3>current weather</h3>
-                <p><strong>Current Temperature:</strong><span id="current-temp"></span></p>
-                <p><strong>Weather Description:</strong><span id="weather-description"></span></p>
+        
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <img id="weatherIcon" src="" alt="Weather Icon">
+                    <p id="currentTemp"></p>
+                    <p id="captionDesc"></p>
+                    <p id="weatherCondition"></p>
+                    <p id="windSpeed"></p>
+                    <p id="humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                    <div id="weather-spotlight-cards"></div>
+                </div>
             </div>
-            <div id="forecast">
-                <h3>Weather Forecast</h3>
-                <div id="forecast-cards"></div>
+            
+            <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div id="forecast-cards">
+                    <!-- Forecast cards will be dynamically inserted here -->
+                </div>
             </div>
         </section>
 
+        <!-- Company Spotlights -->
         <section id="spotlight">
             <h2>Member Spotlights</h2>
             <div id="spotlight-cards"></div>
@@ -83,7 +96,8 @@
         <p>&copy; <span id="currentyear"></span>Chamber of Commerce | Irie Judicael Elvis | WDD 231</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/weather-data.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </body>
 </html>

@@ -71,34 +71,38 @@ header {
     margin: 0 5px;
     padding: auto;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 5px 5px 10px #333;
 }
 
 .forecast-card {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 1fr);
     background-color: #fff;
     padding: 15px;
     margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
 }
 
-/* Spotlight Section */
-#spotlight {
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
+/* Company Spotlights */
+.spotlights {
+    margin: 30px auto;
+    max-width: 1200px;
 }
 
 #spotlight-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    background: #fff;
+    display: flex;
+    gap: 10px;
+}
+
+.spotlight-card {
+    background-color: #f4f4f4;
     padding: 15px;
-    margin: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    flex: 1;
 }
 
 .spotlight-card img {
@@ -107,7 +111,6 @@ header {
     border-radius: 50%;
     margin-bottom: 10px;
 }
-
 
 .hero h1 {
     font-size: 2.5rem;
@@ -317,7 +320,7 @@ footer {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: var(--color-primary);
+        background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
         top: 11%;
         right: 0;
