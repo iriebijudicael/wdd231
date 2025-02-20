@@ -1,33 +1,33 @@
 {
     "trending": [
       {
-        "image": "../images/stockphoto.jpg",
-        "title": "Trending News 1",
+        "image": "../images/stockphoto.webp",
+        "title": "Dressing",
         "description": "This is the first trending news article."
       },
       {
-        "image": "../images/food.jpg",
-        "title": "Trending News 2",
+        "image": "../images/food.webp",
+        "title": "Foods",
         "description": "This is the second trending news article."
       },
       {
-        "image": "../images/adoption.jpg",
-        "title": "Trending News 3",
+        "image": "../images/adoption.webp",
+        "title": "Adoptions",
         "description": "This is the first trending news article."        
       },
       {
-        "image": "../images/school.jpg",
-        "title": "Trending News 4",
+        "image": "../images/school.webp",
+        "title": "Educations",
         "description": "This is the second trending news article."
       },
       {
-        "image": "../images/volunteer.jpeg",
-        "title": "Trending News 5",
+        "image": "../images/volunteer.webp",
+        "title": "Volunteers",
         "description": "This is the second trending news article."
       },
       {
-        "image": "../images/resources.jpeg",
-        "title": "Trending News 6",
+        "image": "../images/resources.webp",
+        "title": "Other Resources",
         "description": "This is the second trending news article."
       }
     ],
