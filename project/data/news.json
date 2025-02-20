@@ -16,17 +16,17 @@
         "description": "This is the first trending news article."        
       },
       {
-        "image": "../images/stockphoto.jpg",
+        "image": "../images/school.jpg",
         "title": "Trending News 4",
         "description": "This is the second trending news article."
       },
       {
-        "image": "../images/stockphoto.jpg",
+        "image": "../images/volunteer.jpeg",
         "title": "Trending News 5",
         "description": "This is the second trending news article."
       },
       {
-        "image": "../images/stockphoto.jpg",
+        "image": "../images/resources.jpeg",
         "title": "Trending News 6",
         "description": "This is the second trending news article."
       }
