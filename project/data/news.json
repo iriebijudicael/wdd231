@@ -33,28 +33,29 @@
     ],
     "editorsChoice": [
       {
-        "name": "Editor 1",
-        "image": "editor1.jpg"
+        "image": "../images/school.jpeg",
+        "name": "School",
+        "description": "This is the first editor's choice news article."
       },
       {
-        "name": "Editor 2",
-        "image": "editor2.jpg"
+        "image": "../images/take-care.jpeg",
+        "name": "Editor 2"
       },
       {
-        "name": "Editor 3",
-        "image": "editor3.jpg"
+        "image": "../images/hospital.png",
+        "name": "Editor 3"
       },
       {
-        "name": "Editor 4",
-        "image": "editor4.jpg"
+        "image": "../images/stockphoto.webp",
+        "name": "Editor 4"
       },
       {
-        "name": "Editor 5",
-        "image": "editor5.jpg"
+        "image": "../images/stockphoto.webp",
+        "name": "Editor 5"
       },
       {
-        "name": "Editor 6",
-        "image": "editor6.jpg"
+        "image": "../images/stockphoto.webp",
+        "name": "Editor 6"
       }
     ]
-  }
+}
