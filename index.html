@@ -14,10 +14,12 @@
     <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMOPJcupgTaDNY_GcP-1VrFziAW4qw0Pf0tw&s">
     <meta property="og:url" content="https://iriebijudicael.github.io/wdd231/">
     <!-- Normalize CSS -->
+     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 
@@ -41,11 +43,11 @@
     <main class="obj-box">
         <section id="card-1">
             <h2>Course Work</h2>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+            <ol>
+                <li><a href="https://iriebijudicael.github.io/wdd231/learning-activities/media-query.html">Media Query Learning Activity</a></li>
+                <li><a href="https://iriebijudicael.github.io/wdd231/learning-activities/design-principles.html">Design Principles Assignment</a></li>
+                <li><a href="https://iriebijudicael.github.io/wdd231/learning-activities/weather-app.html">Weather App Project</a></li>
+            </ol>
         </section>
 
         <section id="card-2">
@@ -57,18 +59,26 @@
         <section id="card-3">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="course-list">
-                <span>All</span>
-                <span>CSE</span>
-                <span>WDD</span>
+                <span id="all">All</span>
+                <span id="cse">CSE</span>
+                <span id="wdd">WDD</span>
+                <span id="itm">ITM</span>
+                <span id="gs">GS</span>
+                <span id="rel">REL</span>
             </div>
             <hr>
-            <div class="course-box">
-                <span>GS170</span>
-                <span>ITM111</span>
-                <span>WDD231</span>
-                <span id="ref">REL250A</span>
-                <span>CSE210</span>
-                <span id="ref">CSE110</span>
+            <div id="course-box" class="course-box">
+                <div class="course-box">
+                    <span>GS170</span>
+                    <span id="ref">WDD130</span>
+                    <span id="ref">WDD131</span>
+                    <span>ITM111</span>
+                    <span>WDD231</span>
+                    <span id="ref">CSE110</span>
+                    <span>REL250A</span>
+                    <span id="ref">CSE111</span>
+                </div>
+                <!-- Course cards will be dynamically inserted here -->
             </div>
         </section>
     </main>

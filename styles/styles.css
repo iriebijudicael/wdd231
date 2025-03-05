@@ -1,9 +1,10 @@
 :root {
-    --color-primary: #1d347A;
+    --color-primary: #000;
     --color-secondary: #7382AD;
-    --accent-color1: #C7B7B3;
+    --accent-color1: #6b2b1c;
     --accent-color2: #F2ECE8;
-    --accent-color3: #ff6f61;
+    --accent-color3: #ffa861;
+    --accent-color4: #54a9de;
 }
 *{
     padding: 0;
@@ -49,7 +50,7 @@ body {
 #navbar {
     display: flex;
     align-items: center;
-    background-color: var(--color-primary);
+    background-color: var(--accent-color4);
     list-style: none;
     cursor: pointer;
     padding: 20px 0;
@@ -70,7 +71,9 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #f39c12;
+    color: var(--accent-color2);
+    background-color: var(--accent-color3);
+    border-radius: 5px;
 }
 
 
@@ -101,24 +104,20 @@ nav li a {
     transition: color 0.3s ease;
     padding: 8px 20px;
 }
-.nav-links a:hover {
-    background-color: var(--accent-color3);
-    border-radius: 5px;
-    
-}
+
 main ul {
     padding: 2rem;
 }
 main {
     display: grid;
-    background: #bbb;
+    background: #d7d1d1;
     grid-template-columns: 1fr 1fr;
     text-align: center;
     padding: 0.9rem;
     gap: 1.5rem;
 }
 main h2{
-    color: var(--color-primary);
+    color: var(--accent-color1);
     padding: 6px 9px;
 }
 #card-1, #card-2, #card-3 {
@@ -161,14 +160,22 @@ hr {
 }
 .course-list span {
     text-align: center;
-    background: var(--accent-color3);
+    background: var(--accent-color4);
     padding: 8px 35px;
     margin: 10px;
     border-radius: 5px;
 }
+.course-card {
+    text-align: start;
+    background: var(--accent-color4);
+    padding: 8px 35px;
+    margin: 10px;
+    border-radius: 5px;
+    gap: 0.9rem;
+}
 .course-box span {
     text-align: center;
-    background: var(--accent-color3);
+    background: #000;
     padding: 8px 35px;
     margin: 10px;
     border-radius: 5px;
@@ -180,8 +187,8 @@ hr {
     gap: 1rem;
     padding: 2rem;
 }
-#ref {
-    background: var(--color-primary);
+.completed {
+    background: var(--accent-color3);
 }
 footer {
     background-color: var(--color-secondary);
