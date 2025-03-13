@@ -172,10 +172,13 @@ button {
     cursor: pointer;
 }
 .nav-links {
+    text-align: start;
     align-items: center;
     list-style: none;
     display: flex;
-    gap: 20px;
+}
+.nav-links li {
+    margin-right: 10px;
 }
 
 .nav-links li a {
