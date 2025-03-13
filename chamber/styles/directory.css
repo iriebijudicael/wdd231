@@ -159,7 +159,7 @@ h2 {
     padding: 8px 20px;
     cursor: pointer;
 }
-.mark {
+#mark {
     color: var(--color-primary);
     font-weight: bold;
 }
