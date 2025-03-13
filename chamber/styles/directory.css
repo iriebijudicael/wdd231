@@ -29,6 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 /*---- Home Page Styles only for hero----*/
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/hero1.webp);
@@ -42,6 +43,7 @@ header {
     font-size: 2rem;
     font-weight: bold;
 }
+
 .data-cards h3 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -50,6 +52,7 @@ header {
     color: var(--color-primary);
     padding: 0.9rem;
 }
+
 .data-cards {
     display: grid;
     grid-template-columns: 1fr repeat(3, 1fr);
@@ -60,16 +63,17 @@ header {
     padding: 0 20px;
     gap: 10px;
 }
+
 .event {
     background: #fff;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #333;
     grid-column: 1/3;
 }
+
 /* Weather Section */
 #weather {
     margin: 0 5px;
-    padding: auto;
     background: #fff;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #333;
@@ -118,6 +122,7 @@ header {
     color: var(--accent-color4);
     padding: 50px 0;
 }
+
 .hero p {
     width: 32%;
     font-size: 1.5rem;
@@ -125,19 +130,21 @@ header {
     padding: 50px;
 }
 
-
 .obj-view {
     padding: 2vw 8vw 2vw 8vw;
     margin: auto;
 }
+
 h1, h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 10px;
 }
+
 h2 {
     color: var(--color-primary);
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -159,10 +166,12 @@ h2 {
     padding: 8px 20px;
     cursor: pointer;
 }
+
 #mark {
     color: var(--color-primary);
     font-weight: bold;
 }
+
 button {
     background-color: var(--color-primary);
     color: #fff;
@@ -171,12 +180,14 @@ button {
     padding: 8px 20px;
     cursor: pointer;
 }
+
 .nav-links {
     text-align: start;
     align-items: center;
     list-style: none;
     display: flex;
 }
+
 .nav-links li {
     margin-right: 10px;
 }
@@ -188,12 +199,15 @@ button {
     padding: 20px 30px;
     transition: all 0.3s ease;
 }
+
 .btn, a:hover {
     background: rgba(255, 255, 255, 0.6);
 }
+
 button:hover {
     background: var(--accent-color3);
 }
+
 #hamburger {
     display: none;
     flex-direction: column;
@@ -212,6 +226,7 @@ button:hover {
     margin: 20px 0;
     text-align: center;
 }
+
 .view-toggle i {
     font-size: 1.2rem;
     margin-right: 5px;
@@ -249,44 +264,38 @@ button:hover {
     border-radius: 10px;
     margin-bottom: 10px;
     border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
+    box-shadow: 0 0 10px #333;
 }
+
 #directory .member-card > * {
-	margin: 0.1rem;
+    margin: 0.1rem;
 }
 
 .list-view {
-	display: flex;
+    display: flex;
     padding: 20px;
     justify-content: space-between;
 }
 
-/*.list-view {
-	display: grid;
-    flex-direction: column;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
-}*/
 .list-view img {
-	display: none;
+    display: none;
 }
 
 .list-view > * {
-	margin: 0 1rem;
+    margin: 0 1rem;
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+    display: none; /* smaller viewports only */
 }
 
 .list section h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list-view:nth-child(even) {
-	background-color: #bed;
+    background-color: #bed;
 }
 
 /* Footer Styles */
@@ -298,8 +307,6 @@ footer {
     margin-top: 20px;
 }
 
-
-
 /* Responsive Navigation */
 @media (max-width: 768px) {
     .logo {
@@ -309,17 +316,21 @@ footer {
         position: relative;
         padding: 20px 0;
     }
+
     #hamburger {
         display: flex;
     }
+
     #directory {
         display: grid;
         padding: 20px;
         grid-template-columns: 1fr 1fr;
     }
+
     .member-card {
         box-shadow: 5px 5px 5px var(--accent-color1);
     }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -334,13 +345,14 @@ footer {
     .nav-links.active {
         display: flex;
     }
+
     .nav-links li {
         padding: 10px 0;
     }
+
     .nav-links a {
-       font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-    
 }
 
 /* Responsive Navigation */
@@ -348,20 +360,23 @@ footer {
     #hamburger {
         font-size: 0.9rem;
     }
+
     #directory {
         display: grid;
         padding: 20px;
         grid-template-columns: 1fr;
     }
+
     h1 {
         font-size: 1.3rem;
     }
+
     .nav-links {
         flex-direction: column;
         top: 16%;
     }
-    .list-view {
-       display: block;
-    }
 
+    .list-view {
+        display: block;
+    }
 }
