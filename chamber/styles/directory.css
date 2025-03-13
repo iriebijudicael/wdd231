@@ -30,7 +30,7 @@ header {
     align-items: center;
 }
 main {
-    padding: auto;
+    padding: 4vw 5vw 0 5vw;
 }
 /*---- Home Page Styles only for hero----*/
 .hero {
