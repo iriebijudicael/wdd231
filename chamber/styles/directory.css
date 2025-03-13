@@ -137,13 +137,14 @@ main {
     margin: auto;
 }
 
-h1, h2 {
+.logo p {
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 10px;
 }
 
-h2 {
+h1 {
+    font-size: 2rem;
     color: var(--color-primary);
 }
 
