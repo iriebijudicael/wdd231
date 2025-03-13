@@ -29,7 +29,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+main {
+    padding: auto;
+}
 /*---- Home Page Styles only for hero----*/
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/hero1.webp);
