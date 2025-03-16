@@ -314,10 +314,11 @@ footer {
     }
 
     #navbar {
-        top: 35%;
+        top: 37%;
         right: 0;
+        background: var(--accent-color1);
     }
-
+    
     .nav-links li {
         margin: 5px 0;
     }
@@ -326,7 +327,7 @@ footer {
         font-size: 1.2rem;
         line-height: 5px;
     }
-
+    
     main {
         padding: 10px;
     }
