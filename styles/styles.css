@@ -88,7 +88,7 @@ body {
     margin-top: 1rem;
 }
 
-.nav-links li{
+.nav-links li {
     padding: 0.5rem 2rem;
     text-align: center;
 }
@@ -219,7 +219,7 @@ footer {
     #navbar {
         display: none; /* Hide the navbar by default on smaller screens */
         position: absolute;
-        top: 22%;
+        top: 25%;
         right: 0;
         background-color: var(--color-primary);
         width: 100%;
@@ -250,7 +250,6 @@ footer {
 
     
     .nav-links a {
-        color: rgb(166, 44, 44);
         text-decoration: none;
         font-size: 2rem;
     }
@@ -309,7 +308,6 @@ footer {
     #navbar {
         top: 37%;
         right: 0;
-        background: var(--accent-color1);
     }
     
     .nav-links li {
