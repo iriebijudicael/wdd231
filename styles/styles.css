@@ -120,7 +120,7 @@ main {
 
 main h2 {
     color: var(--color-primary);
-    padding: 6px 9px;
+    margin-top: 20px;
 }
 
 #card-1, #card-2, #card-3 {
