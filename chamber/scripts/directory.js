@@ -1,3 +1,10 @@
+// Get the current year
+const currentYear = new Date().getFullYear();
+document.getElementById('currentyear').textContent = currentYear;
+
+// Get the last modified date
+const lastModified = document.lastModified;
+document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 // Toggle hamburger menu
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
@@ -48,13 +55,7 @@ document.getElementById('list-view').addEventListener('click', () => {
     displayMembers('list');
 });
 
-// Get the current year
-const currentYear = new Date().getFullYear();
-document.getElementById('currentyear').textContent = currentYear;
 
-// Get the last modified date
-const lastModified = document.lastModified;
-document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 
 // Initial Load
 displayMembers();
