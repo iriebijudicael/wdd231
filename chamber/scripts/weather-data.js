@@ -1,65 +1,46 @@
+// API URL for Abidjan, CI
+const apiKey = '0edd533614458f51faad6081561a82ca';
+const city = 'Abidjan, CI';
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?p=Abidjan&lat=5.35&lon=-4.02&units=metric&appid=0edd533614458f51faad6081561a82ca`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/weather?lat=49.77&lon=6.67&units=metric&appid=0edd533614458f51faad6081561a82ca`;
+
+
 // DOM Elements
 const weatherIcon = document.getElementById('weather-icon');
 const currentTemp = document.getElementById('current-temp');
 const currentDesc = document.getElementById('current-desc');
 const windSpeed = document.getElementById('wind-speed');
 const humidity = document.getElementById('humidity');
-const sunrise = document.getElementById('sunrise');
-const sunset = document.getElementById('sunset');
 const forecastCards = document.getElementById('forecast-cards');
-
-// API URL for Abidjan, CI
-const apiKey = '0edd533614458f51faad6081561a82ca';
-const city = 'Abidjan, CI';
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Abidjan&units=metric&appid=0edd533614458f51faad6081561a82ca`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Abidjan&units=metric&appid=0edd533614458f51faad6081561a82ca`;
 
 // Fetch weather data
 async function fetchWeather() {
     try {
-        // Fetch current weather
-        const weatherResponse = await fetch(apiUrl).catch(error => {
-            console.error('Network error:', error);
-            throw new Error('Network error');
-        });
-        if (!weatherResponse.ok) {
-            console.error('Failed to fetch weather data:', weatherResponse.statusText);
-            throw new Error('Weather data not available');
-        }
-        const weatherData = await weatherResponse.json();
-        displayCurrentWeather(weatherData);
-
-        // Fetch forecast
-        const forecastResponse = await fetch(forecastUrl);
-        if (!forecastResponse.ok) throw new Error('Forecast data not available');
-        const forecastData = await forecastResponse.json();
-        displayForecast(forecastData);
+        const response = await fetch(apiUrl);
+        if (!response.ok) throw new Error('Weather data not available');
+        const data = await response.json();
+        displayCurrentWeather(data);
+        displayForecast(data);
     } catch (error) {
         console.error('Error fetching weather data:', error);
     }
 }
 
-// Display current weather data
+// Display current weather
 function displayCurrentWeather(data) {
-    // Display temperature
-    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;
+    const current = data.list[0];
+    const weather = current.weather[0];
 
-    // Display weather icon and description
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', data.weather[0].description);
-    currentDesc.textContent = data.weather[0].description;
-
-    // Display additional weather information
-    windSpeed.textContent = `Wind Speed: ${data.wind.speed} m/s`;
-    humidity.textContent = `Humidity: ${data.main.humidity}%`;
-    sunrise.textContent = `Sunrise: ${formatTime(data.sys.sunrise)}`;
-    sunset.textContent = `Sunset: ${formatTime(data.sys.sunset)}`;
+    weatherIcon.src = `https://openweathermap.org/img/wn/${weather.icon}@2x.png`;
+    currentTemp.textContent = `${Math.round(current.main.temp)}°C`;
+    currentDesc.textContent = capitalizeWords(weather.description);
+    windSpeed.textContent = `${current.wind.speed} m/s`;
+    humidity.textContent = `${current.main.humidity}%`;
 }
 
 // Display 3-day forecast
 function displayForecast(data) {
-    const forecast = data.list.filter((item, index) => index % 8 === 0).slice(0, 3); // Get one forecast per day for the next 3 days
+    const forecast = data.list.filter((item, index) => index % 8 === 0).slice(1, 4); // Get one forecast per day
     forecastCards.innerHTML = forecast.map(day => `
         <div class="forecast-card">
             <p><strong>Date:</strong> ${formatDate(day.dt * 1000)}</p>
@@ -77,15 +58,6 @@ function formatDate(timestamp) {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
-    });
-}
-
-// Format time as "HH:MM AM/PM"
-function formatTime(timestamp) {
-    const date = new Date(timestamp * 1000);
-    return date.toLocaleTimeString('en-US', {
-        hour: '2-digit',
-        minute: '2-digit',
     });
 }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page | Chamber Of Commerce</title>
+    <title>Abidjan | Chamber Of Commerce</title>
     <meta name="description" content="Explore the directory of local businesses and members of the Chamber of Commerce">
     <meta name="author" content="Irie Judicael Elvis">
 
@@ -11,7 +11,7 @@
     <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Home Page | Chamber Of Commerce">
+    <meta property="og:title" content="Abidjan | Chamber Of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3665/3665917.png">
     <meta property="og:url" content="https://iriebijudicael.github.io/wdd231/chamber/index.html">
@@ -53,35 +53,28 @@
             <p>Explore the directory of local businesses and members of the Chamber of Commerce</p>
         </div>
 
-        <section class="data-cards">
-            <h2>Home</h2>
-            <div class="event">
-                <h3>Event</h3>
-                <ul>
-                    <li></li>
-                </ul>
+        <!-- Current Events -->
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <div class="events">
+                <p>📅 <strong>Business Networking Night:</strong> October 30, 2023</p>
+                <p>📅 <strong>Community Cleanup Day:</strong> November 5, 2023</p>
             </div>
-        
-            <div class="weather">
-                <h2>Current Weather</h2>
-                <div class="weather-info">
-                    <img id="weatherIcon" src="" alt="Weather Icon">
-                    <p id="currentTemp"></p>
-                    <p id="captionDesc"></p>
-                    <p id="weatherCondition"></p>
-                    <p id="windSpeed"></p>
-                    <p id="humidity"></p>
-                    <p id="sunrise"></p>
-                    <p id="sunset"></p>
-                    <div id="weather-spotlight-cards"></div>
-                </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <div class="weather-info">
+                <img id="weather-icon" src="" alt="Weather Icon">
+                <p><strong>Temperature:</strong> <span id="current-temp">Loading...</span></p>
+                <p><strong>Conditions:</strong> <span id="current-desc">Loading...</span></p>
+                <p><strong>Wind Speed:</strong> <span id="wind-speed">Loading...</span></p>
+                <p><strong>Humidity:</strong> <span id="humidity">Loading...</span></p>
             </div>
-            
             <div class="forecast">
-                <h2>3-Day Forecast</h2>
-                <div id="forecast-cards">
-                    <!-- Forecast cards will be dynamically inserted here -->
-                </div>
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-cards"></div>
             </div>
         </section>
 
@@ -96,8 +89,8 @@
         <p>&copy; <span id="currentyear"></span>Chamber of Commerce | Irie Judicael Elvis | WDD 231</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/weather-data.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
 </body>
 </html>
