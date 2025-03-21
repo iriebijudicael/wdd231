@@ -63,9 +63,8 @@ main {
 .content {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
     overflow: hidden;
-    padding: 0 20px;
+    padding: 0 20px; /* Removed duplicate padding property */
     gap: 6px;
 }
 .events {
@@ -131,15 +130,13 @@ section h2 {
 
 .forecast-card {
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    border: 1px solid #e75b5b; /* Removed duplicate border property */
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
     width: 30%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e75b5b;
 }
-
 .forecast-card h4 {
     margin-bottom: 0.5rem;
 }
@@ -269,7 +266,7 @@ h1 {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 20px;
-    padding: 8px 20px;
+    padding: 5px 20px;
     cursor: pointer;
 }
 
@@ -497,10 +494,6 @@ footer {
     }
     .content {
         display: block;
-        grid-template-columns: 1rf;
-    }
-    .content, .map-image{
-        width: 100%;
     }
     #spotlight-cards {
         justify-content: space-between;
@@ -558,8 +551,5 @@ footer {
         font-size: 1.1rem;
     }
 }
-
-
-
 
 
