@@ -288,14 +288,16 @@ button {
 }
 
 .nav-links {
+    display: flex;
+    justify-content: space-between;
     text-align: start;
     align-items: center;
     list-style: none;
-    display: flex;
 }
 
 .nav-links li {
     margin-right: 10px;
+    width: 100%;
 }
 
 .nav-links li a {
