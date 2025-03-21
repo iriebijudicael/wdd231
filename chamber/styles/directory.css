@@ -32,6 +32,12 @@ header {
 main {
     padding: 1px 7vw 0 7vw;
 }
+
+main h1 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
 /*---- Home Page Styles only for hero----*/
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/hero1.webp);
