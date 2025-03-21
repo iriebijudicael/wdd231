@@ -462,6 +462,7 @@ footer {
         box-shadow: 5px 5px 5px var(--accent-color1);
     }
     .btn {
+        align-items: center;
         margin-left: 45%;
     }
     .nav-links {
