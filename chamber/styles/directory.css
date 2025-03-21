@@ -461,7 +461,9 @@ footer {
     .member-card {
         box-shadow: 5px 5px 5px var(--accent-color1);
     }
-
+    .btn {
+        margin-left: 45%;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -472,6 +474,7 @@ footer {
         width: 100%;
         padding: 10px;
     }
+
     main {
         font-size: 1.5rem;
     }
