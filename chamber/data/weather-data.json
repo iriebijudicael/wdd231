@@ -1,75 +1,77 @@
-
 {
-    "city": {
-      "name": "Abidjan",
-      "country": "CI",
-      "sunrise": 1698206400, 
-      "sunset": 1698249600   
+  "cod": "200",
+  "message": 0,
+  "cnt": 40,
+  "list": [
+    {
+      "dt": 1698764400,
+      "main": {
+        "temp": 30,
+        "feels_like": 32,
+        "temp_min": 29,
+        "temp_max": 31,
+        "pressure": 1012,
+        "humidity": 60
+      },
+      "weather": [
+        {
+          "id": 801,
+          "main": "Clouds",
+          "description": "few clouds",
+          "icon": "02d"
+        }
+      ],
+      "dt_txt": "2023-10-30 12:00:00"
     },
-    "list": [
-      {
-        "dt": 1698206400, 
-        "main": {
-          "temp": 28,     
-          "humidity": 75 
-        },
-        "weather": [
-          {
-            "description": "clear sky",
-            "icon": "01d" 
-          }
-        ],
-        "wind": {
-          "speed": 2.5   
-        }
+    {
+      "dt": 1698850800,
+      "main": {
+        "temp": 29,
+        "feels_like": 31,
+        "temp_min": 28,
+        "temp_max": 30,
+        "pressure": 1013,
+        "humidity": 65
       },
-      {
-        "dt": 1698292800, 
-        "main": {
-          "temp": 29,
-          "humidity": 70
-        },
-        "weather": [
-          {
-            "description": "few clouds",
-            "icon": "02d"
-          }
-        ],
-        "wind": {
-          "speed": 3.0
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
         }
+      ],
+      "dt_txt": "2023-10-31 12:00:00"
+    },
+    {
+      "dt": 1698937200,
+      "main": {
+        "temp": 28,
+        "feels_like": 30,
+        "temp_min": 27,
+        "temp_max": 29,
+        "pressure": 1011,
+        "humidity": 70
       },
-      {
-        "dt": 1698379200,
-        "main": {
-          "temp": 30,
-          "humidity": 65
-        },
-        "weather": [
-          {
-            "description": "scattered clouds",
-            "icon": "03d"
-          }
-        ],
-        "wind": {
-          "speed": 3.5
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
         }
-      },
-      {
-        "dt": 1698465600, 
-        "main": {
-          "temp": 27,
-          "humidity": 80
-        },
-        "weather": [
-          {
-            "description": "light rain",
-            "icon": "10d"
-          }
-        ],
-        "wind": {
-          "speed": 2.0
-        }
-      }
-    ]
+      ],
+      "dt_txt": "2023-11-01 12:00:00"
+    }
+  ],
+  "city": {
+    "id": 2293538,
+    "name": "Abidjan",
+    "coord": {
+      "lat": 5.3094,
+      "lon": -4.0197
+    },
+    "country": "CI",
+    "timezone": 0
   }
+}

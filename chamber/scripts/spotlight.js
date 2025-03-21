@@ -1,71 +1,36 @@
-// Display spotlight ads
-function displaySpotlights() {
-    const spotlightCards = document.getElementById('spotlight-cards');
-
-    // Fetch member data
-async function fetchMembers() {
+// Fetch member data from JSON and display spotlighted members
+async function fetchSpotlightMembers() {
     try {
-        const response = await fetch('data/spotlight.json'); // Path to your JSON file
-        if (!response.ok) throw new Error('Member data not available');
+        const response = await fetch('data/spotlight.json');
         const data = await response.json();
-        displaySpotlights(data);
+        const spotlightMembers = data.members.filter(member => member.membershipLevel === 'Gold' || member.membershipLevel === 'Silver');
+        displaySpotlight(spotlightMembers);
     } catch (error) {
-        console.error('Error fetching member data:', error);
+        console.error('Error fetching spotlight member data:', error);
     }
 }
 
-// Display spotlight ads
-function displaySpotlights(members) {
-    const spotlightCards = document.getElementById('spotlight-cards');
+// Display spotlighted members
+function displaySpotlight(members) {
+    const spotlightContainer = document.getElementById('spotlight-cards');
+    spotlightContainer.innerHTML = ''; // Clear existing content
 
-    // Filter gold and silver members
-    const eligibleMembers = members.filter(member => member.membership === 'gold' || member.membership === 'silver');
+    members.slice(0, 3).forEach(member => { // Display up to 3 members
+        const memberCard = document.createElement('div');
+        memberCard.classList.add('spotlight-card');
 
-    // Randomly select 2-3 members
-    const selectedMembers = [];
-    while (selectedMembers.length < 3 && eligibleMembers.length > 0) {
-        const randomIndex = Math.floor(Math.random() * eligibleMembers.length);
-        selectedMembers.push(eligibleMembers.splice(randomIndex, 1)[0]);
-    }
-
-    // Display spotlight cards
-    spotlightCards.innerHTML = selectedMembers.map(member => `
-        <div class="spotlight-card">
+        memberCard.innerHTML = `
             <img src="${member.logo}" alt="${member.name} Logo">
             <h3>${member.name}</h3>
-            <p><strong>Phone:</strong> ${member.phone}</p>
-            <p><strong>Address:</strong> ${member.address}</p>
-            <p><strong>Website:</strong> <a href="${member.website}" target="_blank">Visit Site</a></p>
-            <p><strong>Membership Level:</strong> ${member.membership.charAt(0).toUpperCase() + member.membership.slice(1)}</p>
-        </div>
-    `).join('');
+            <p>${member.address}</p>
+            <p>${member.phone}</p>
+            <p>${member.website}</p>
+            <p>${member.description}</p>
+        `;
+
+        spotlightContainer.appendChild(memberCard);
+    });
 }
 
-// Initialize member fetch
-fetchMembers();
-
-    // Filter gold and silver members
-    const eligibleMembers = members.filter(member => member.membership === 'gold' || member.membership === 'silver');
-
-    // Randomly select 2-3 members
-    const selectedMembers = [];
-    while (selectedMembers.length < 3 && eligibleMembers.length > 0) {
-        const randomIndex = Math.floor(Math.random() * eligibleMembers.length);
-        selectedMembers.push(eligibleMembers.splice(randomIndex, 1)[0]);
-    }
-
-    // Display spotlight cards
-    spotlightCards.innerHTML = selectedMembers.map(member => `
-        <div class="spotlight-card">
-            <img src="${member.logo}" alt="${member.name} Logo">
-            <h3>${member.name}</h3>
-            <p><strong>Phone:</strong> ${member.phone}</p>
-            <p><strong>Address:</strong> ${member.address}</p>
-            <p><strong>Website:</strong> <a href="${member.website}" target="_blank">Visit Site</a></p>
-            <p><strong>Membership Level:</strong> ${member.membership.charAt(0).toUpperCase() + member.membership.slice(1)}</p>
-        </div>
-    `).join('');
-}
-
-// Initialize spotlights
-displaySpotlights();
+// Initialize spotlight
+fetchSpotlightMembers();

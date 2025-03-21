@@ -56,42 +56,144 @@ main {
     padding: 0.9rem;
 }
 
-.data-cards {
-    display: grid;
-    grid-template-columns: 1fr repeat(3, 1fr);
-    max-width: 1200px;
-    margin: auto;
+
+
+/* Weather Section */
+
+.content {
+    display: flex;
+    justify-content: space-between;
     padding: 1rem;
     overflow: hidden;
     padding: 0 20px;
-    gap: 10px;
+    gap: 6px;
+}
+.events {
+    
+    border-radius: 10px;
 }
 
-.event {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #333;
-    grid-column: 1/3;
+/* Current Events */
+.current-events {
+    width: 50%;
+    margin: 20px 0;
+    border: 1px solid #e75b5b;
+    background: #deefa1; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.current-events h2{
+    margin-left: 20px;
+}
+
+.events {
+    margin: 0 5px;
+    padding: 20px;
+    border-radius: 5px;
+    
 }
 
 /* Weather Section */
-#weather {
-    margin: 0 5px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px #333;
+.weather, .forecast, .map {
+    margin: 20px 0;
+    background: #deefa1;
+    border: 1px solid #e75b5b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info, .forecast-card {
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+section h2 {
+    margin: 1rem;
+    color: var(--color-primary);
+}
+.weather-info img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.forecast h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#forecast-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .forecast-card {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 1fr);
-    background-color: #fff;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e75b5b;
 }
+
+.forecast-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.forecast-card img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem 0;
+}
+
+.forecast-card p {
+    margin: 0.25rem 0;
+}.forecast {
+    margin-top: 2rem;
+}
+
+.forecast h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#forecast-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.forecast-card img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem 0;
+}
+
+.forecast-card p {
+    margin: 0.25rem 0;
+}
+
+
+
 
 /* Company Spotlights */
 .spotlights {
@@ -365,7 +467,9 @@ footer {
         width: 100%;
         padding: 10px;
     }
-
+    main {
+        font-size: 1.5rem;
+    }
     .nav-links.active {
         display: flex;
     }
@@ -373,9 +477,28 @@ footer {
     .nav-links li {
         padding: 10px 0;
     }
-
+    .hero p {
+        width: 70%;
+        font-size: 2rem;
+        color: var(--accent-color2);
+        padding: 70px;
+    }
     .nav-links a {
         font-size: 1.5rem;
+    }
+    #mark {
+        color: var(--accent-color4);
+        font-weight: bold;
+    }
+    .current-events{
+        width: 100%;
+    }
+    .content {
+        display: block;
+        grid-template-columns: 1rf;
+    }
+    .content, .map-image{
+        width: 100%;
     }
     #spotlight-cards {
         justify-content: space-between;
@@ -383,6 +506,7 @@ footer {
     }
     footer {
         display: block;
+        font-size: 1.5rem;
         flex-direction: column;
         justify-content: space-between;
         text-align: start;
@@ -408,59 +532,32 @@ footer {
         padding: 20px;
         grid-template-columns: 1fr;
     }
-
+    .hero p {
+        width: 90%;
+        font-size: 1.2rem;
+        padding: 30px;
+    }
     h1 {
         font-size: 1.3rem;
     }
-
+    main {
+        font-size: 1rem;
+    }
     .nav-links {
         flex-direction: column;
-        top: 16%;
+        top: 20%;
     }
 
     .list-view {
         display: block;
     }
+    footer {
+        display: block;
+        font-size: 1.1rem;
+    }
 }
 
 
 
 
 
-/* Current Events */
-.current-events {
-    margin: 20px 0;
-}
-
-.events {
-    background-color: #f4f4f4;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-/* Weather Section */
-.weather {
-    margin: 20px 0;
-}
-
-.weather-info, .forecast-card {
-    background-color: #f4f4f4;
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-
-.weather-info img {
-    width: 50px;
-    height: 50px;
-}
-
-.forecast-cards {
-    display: flex;
-    gap: 10px;
-}
-
-.forecast-card {
-    flex: 1;
-    text-align: center;
-}
