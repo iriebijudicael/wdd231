@@ -501,6 +501,9 @@ footer {
     .content {
         display: block;
     }
+    .map-image {
+        width: 100%;
+    }
     #spotlight-cards {
         justify-content: space-between;
         flex-direction: column;
