@@ -265,7 +265,7 @@ h1 {
     height: 50px;
 }
 
-.btn {
+#nav-links .btn {
     background-color: transparent;
     font-size: 1rem;
     font-weight: 600;
@@ -311,7 +311,7 @@ button {
     transition: all 0.3s ease;
 }
 
-.btn, a:hover {
+#nav-links .btn, a:hover {
     background: rgba(255, 255, 255, 0.6);
 }
 
