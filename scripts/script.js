@@ -18,7 +18,7 @@ hamburger.addEventListener('click', () => {
 });
 
 
-const courses = [
+export const courses = [
     {
         subject: 'CSE',
         number: 110,
