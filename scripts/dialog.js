@@ -1,4 +1,4 @@
-import { courses } from './scripts/script.js';
+import { courses } from '../scripts/script.js';
 
 // 1. QUERY SELECTOR REFERENCES
 const courseDetails = document.getElementById('course-details');
