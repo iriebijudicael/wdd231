@@ -1,0 +1,358 @@
+:root {
+    --color-primary: #0f28a3;
+    --color-secondary: #7382AD;
+    --accent-color1: #ff6d4d;
+    --accent-color2: #fbfbfb;
+    --accent-color3: #f7984b;
+    --accent-color4: #54a9de;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--accent-color2);
+    color: var(--accent-color1);
+}
+
+.obj-box {
+    padding: 2vw 2vw 0 2vw;
+    margin: auto;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    color: var(--accent-color2);
+    background-color: var(--color-secondary);
+}
+
+.profile img {
+    width: 100px;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+#hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color4);
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.nav-links li a:hover {
+    color: var(--accent-color2);
+    background-color: var(--accent-color3);
+    border-radius: 5px;
+}
+
+#card-2 img {
+    max-width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.nav-links li {
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+
+
+
+main ul {
+    padding: 2rem;
+}
+
+main {
+    display: grid;
+    background: #d7d1d1;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 0.9rem;
+    gap: 1.5rem;
+}
+
+main h2 {
+    color: var(--color-primary);
+    margin-top: 20px;
+}
+
+#card-1, #card-2, #card-3 {
+    background-color: var(--accent-color2);
+    padding: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+#card-1 {
+    grid-column: 1/3;
+    padding: 0;
+}
+
+#card-2 {
+    grid-column: 3/4;
+}
+
+#card-3 {
+    grid-column: 1/4;
+}
+
+#card-2 p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+span {
+    font-weight: 600;
+    color: var(--accent-color2);
+}
+
+hr {
+    padding: 1px;
+    background-color: var(--color-primary);
+}
+
+.course-list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.course-list span {
+    text-align: center;
+    background: var(--accent-color4);
+    padding: 8px 35px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.course-card {
+    text-align: start;
+    background: var(--accent-color4);
+    color: var(--accent-color2);
+    padding: 8px 35px;
+    margin: 10px;
+    border-radius: 5px;
+    gap: 0.9rem;
+}
+
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  ::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+  }
+  
+  dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+  }
+
+
+.course-box span {
+    text-align: center;
+    background: #000;
+    padding: 8px 35px;
+    margin: 10px;
+    border-radius: 5px;
+    gap: 0.9rem;
+}
+
+.course-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.completed {
+    background: var(--accent-color3);
+    color: #000;
+}
+
+footer {
+    background-color: var(--color-secondary);
+    color: var(--accent-color2);
+    text-align: center;
+    padding: 4rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+        font-size: 2.5rem;
+        margin: 10px;
+        position: absolute;
+        top: 0;
+        right: 5px;
+        cursor: pointer;
+    }
+
+    #navbar {
+        display: none; /* Hide the navbar by default on smaller screens */
+        position: absolute;
+        top: 25%;
+        right: 0;
+        background-color: var(--color-primary);
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #navbar.active {
+        display: block; /* Show the navbar when active */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile h1 {
+        font-size: 3rem;
+    }
+
+    .profile {
+        padding: 4rem;
+    }
+
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    
+    .nav-links a {
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    .course-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .obj-box {
+        display: block;
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .course-list, .course-box span {
+        font-size: 1.5rem;
+    }
+
+    .course-box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .course-box span {
+        padding: 4vw 10vw;
+        margin: 2px;
+        border-radius: 5px;
+        gap: 0.9rem;
+    }
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 480px) {
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #navbar {
+        top: 37%;
+        right: 0;
+    }
+    
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        line-height: 5px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .course-list, .course-box span {
+        font-size: 1rem;
+    }
+}

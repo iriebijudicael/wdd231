@@ -1,0 +1,153 @@
+/* Membership Cards Container */
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual Cards */
+  .membership-cards .card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .membership-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card Type Colors */
+  .membership-cards .card-np {
+    border-top: 5px solid #4CAF50;
+  }
+  
+  .membership-cards .card-bronze {
+    border-top: 5px solid #CD7F32;
+  }
+  
+  .membership-cards .card-silver {
+    border-top: 5px solid #C0C0C0;
+  }
+  
+  .membership-cards .card-gold {
+    border-top: 5px solid #FFD700;
+  }
+  
+  /* Card Content Styling */
+  .membership-cards .card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .membership-cards .card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .membership-cards .card strong {
+    color: #222;
+    font-size: 1.2rem;
+  }
+  
+  /* Learn More Links */
+  .info-link {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+  }
+  
+  .info-link:hover {
+    background-color: #1a252f;
+  }
+  
+  /* Modal Dialog Styles */
+  dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 80px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Close Button */
+  .close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+    padding: 0.5rem;
+  }
+  
+  .close-modal:hover {
+    color: #333;
+  }
+  
+  /* Modal Content */
+  dialog h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-right: 2rem;
+  }
+  
+  dialog ul {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+  
+  dialog li {
+    margin-bottom: 0.5rem;
+    color: #444;
+  }
+  
+  dialog p {
+    color: #333;
+    font-weight: bold;
+    margin-top: 1.5rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .membership-cards {
+      grid-template-columns: 1fr;
+    }
+    
+    dialog {
+      width: 95%;
+      padding: 1.5rem;
+    }
+  }
+
+
+
+
+  

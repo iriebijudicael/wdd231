@@ -1,0 +1,40 @@
+{
+    "members": [
+        {
+            "name": "Business A",
+            "logo": "./images/mastercard.webp",
+            "address": "123 Main Street, Abidjan",
+            "phone": "123-456-7890",
+            "website": "https://businessa.com",
+            "membershipLevel": "Gold",
+            "description": "A leading provider of business solutions."
+        },
+        {
+            "name": "Business B",
+            "logo": "./images/emirates.webp",
+            "address": "456 Market Street, Abidjan",
+            "phone": "234-567-8901",
+            "website": "https://businessb.com",
+            "membershipLevel": "Silver",
+            "description": "Specializing in retail and consumer goods."
+        },
+        {
+            "name": "Business C",
+            "logo": "./images/ford.webp",
+            "address": "789 Park Avenue, Abidjan",
+            "phone": "345-678-9012",
+            "website": "https://businessc.com",
+            "membershipLevel": "Bronze",
+            "description": "Innovative tech solutions for modern businesses."
+        },
+        {
+            "name": "Business D",
+            "logo": "./images/ford.webp",
+            "address": "101 River Road, Abidjan",
+            "phone": "456-789-0123",
+            "website": "https://businessd.com",
+            "membershipLevel": "Gold",
+            "description": "Your trusted partner in finance and investment."
+        }
+    ]
+}

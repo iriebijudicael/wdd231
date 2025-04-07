@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Irie Judicael Elvis</title>
+    <meta name="description" content="Explore Irie Judicael Elvis's portfolio showcasing media query learning activities and web development projects.">
+    <meta name="author" content="Irie Judicael Elvis">
+    
+    <!-- Normalize CSS -->
+     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/IRIE_COTE-IVOIRE.webp" alt="Profile Picture">
+            <h1>Irie.E Judicael</h1>
+            <i id="hamburger" class="ri-menu-line"></i>
+        </div>
+        <nav id="navbar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Chamber</a></li>
+                <li><a href="https://github.com/iriebijudicael/wdd231">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="obj-box">
+        <section id="card-1">
+            <h2>Course Work</h2>
+            <ul>
+                <li><a href="https://iriebijudicael.github.io/wdd131/filtered-temples.html">How to add elements in HTML with Javascript</a></li>
+                <li><a href="https://iriebijudicael.github.io/wdd131/Project/form.html">How to create a Form</a></li>
+                <li><a href="https://iriebijudicael.github.io/wdd131/temples.html">Build a Responsive Nav Menu</a></li>
+            </ul>
+        </section>
+
+        <section id="card-2">
+            <h2>Abidjan, Ivory Coast</h2>
+            <img src="images/Zaouli.webp" alt="Dance Zaouli">
+            <p>Dance Zouli</p>
+        </section>
+
+        <section id="card-3">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="course-list">
+                <span id="all">All</span>
+                <span id="cse">CSE</span>
+                <span id="wdd">WDD</span>
+                <span id="itm">ITM</span>
+                <span id="gs">GS</span>
+                <span id="rel">REL</span>
+            </div>
+            <hr>
+            
+            <div class="course-details">
+                <div class="course-box" id="course-box">
+                    <span>GS170</span>
+                    <span id="ref1">WDD130</span>
+                    <span id="ref2">WDD131</span>
+                    <span>ITM111</span>
+                    <span>WDD231</span>
+                    <span id="ref3">CSE110</span>
+                    <span>REL250A</span>
+                    <span id="ref4">CSE111</span>
+                </div>
+
+                <dialog id="course-details"></dialog>
+
+                <!-- Course cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Irie Judicael Elvis | Ivory Coast</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/script.js" defer></script>
+    <!--<script src="scripts/dialog.js" type="module" defer></script>-->
+</body>
+</html>

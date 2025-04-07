@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Chamber | Chamber Of Commerce</title>
+    <meta name="description" content="Explore the directory of local businesses and members of the Chamber of Commerce">
+    <meta name="author" content="Irie Judicael Elvis">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Join Our Chamber |Chamber Of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3665/3665917.png">
+    <meta property="og:url" content="https://iriebijudicael.github.io/wdd231/chamber/index.html">
+    
+    <!-- Normalize CSS -->
+     <link rel="stylesheet" href="styles/join.css">
+     <link rel="stylesheet" href="styles/directory.css">
+     <link rel="stylesheet" href="styles/memberships-level.css">
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="images/favicon-v2.webp" alt="Chamber of Commerce Logo">
+            <h1>Join Our Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+
+                <li><a class="btn" href="join.html">Join</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="join-container">
+        <h1>Join Our Chamber</h1>
+        
+        <div class="form-layout">
+            <form id="joinForm" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label>
+                        First Name*:
+                        <input type="text" name="firstName" required 
+                               title="Please enter your first name"
+                               autocomplete="given-name">
+                    </label>
+                    
+                    <label>
+                        Last Name*:
+                        <input type="text" name="lastName" required
+                               title="Please enter your last name"
+                               autocomplete="family-name">
+                    </label>
+                    
+                    <label>
+                        Title/Role:
+                        <input type="text" name="title" 
+                               title="Your position in the organization"
+                               autocomplete="organization-title"
+                               pattern="[a-zA-Z0-9\- ]{2,}">
+                    </label>
+                    
+                    <label>
+                        Email*:
+                        <input type="email" name="email" required
+                               title="Please enter a valid email address"
+                               autocomplete="email"
+                               placeholder="example@domain.com">
+                    </label>
+                    
+                    <label>
+                        Mobile Phone*:
+                        <input type="tel" name="phone" required
+                               title="Please enter your mobile phone number"
+                               autocomplete="tel">
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Business Information</legend>
+                    
+                    <label>
+                        Business/Organization Name*:
+                        <input type="text" name="business" required
+                               title="Please enter your business name"
+                               autocomplete="organization">
+                    </label>
+                    
+                    <label>
+                        Business Description:
+                        <textarea name="description" 
+                                  title="Brief description of your business"></textarea>
+                    </label>
+                    
+                    <label>
+                        Membership Level*:
+                        <select name="membership" required>
+                            <option value="">Select a level...</option>
+                            <option value="np">NP Membership (Non-Profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                
+                <button type="submit">Submit Application</button>
+            </form>
+            
+            <div class="membership-cards" id="membership-cards">
+                <h2>Membership Levels</h2>
+                    
+                <div class="card-np">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations</p>
+                    <p><strong>No fee</strong></p>
+                    <a href="#np-modal" class="info-link">Learn More</a>
+                </div>
+                
+                <div class="card-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic business benefits</p>
+                    <p><strong>$250/year</strong></p>
+                    <a href="#bronze-modal" class="info-link">Learn More</a>
+                </div>
+                
+                <div class="card-silver">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced benefits</p>
+                    <p><strong>$500/year</strong></p>
+                    <a href="#silver-modal" class="info-link">Learn More</a>
+                </div>
+                
+                <div class="card-gold">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits</p>
+                    <p><strong>$1000/year</strong></p>
+                    <a href="#gold-modal" class="info-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Membership Benefit Modals -->
+        <!--<dialog class="modal" id="np-modal">
+            <button class="close-modal">✕</button>
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>Free listing in our directory</li>
+                <li>Access to networking events</li>
+                <li>Monthly newsletter</li>
+                <li>Community recognition</li>
+            </ul>
+            <p>No membership fee for registered non-profit organizations.</p>
+        </dialog>
+        
+        <dialog id="bronze-modal">
+            <button class="close-modal">✕</button>
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>All NP benefits</li>
+                <li>10% discount on chamber events</li>
+                <li>Business training workshops</li>
+                <li>Basic listing in our business spotlight</li>
+            </ul>
+            <p>Annual fee: $250</p>
+        </dialog>
+        
+        <dialog id="silver-modal">
+            <button class="close-modal">✕</button>
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>20% discount on chamber events</li>
+                <li>Priority listing in directory</li>
+                <li>Access to exclusive networking groups</li>
+                <li>Quarterly business consultation</li>
+            </ul>
+            <p>Annual fee: $500</p>
+        </dialog>
+        
+        <dialog id="gold-modal">
+            <button class="close-modal">✕</button>
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>30% discount on chamber events</li>
+                <li>Featured spotlight on homepage</li>
+                <li>VIP access to all events</li>
+                <li>Monthly business consultation</li>
+                <li>Premium advertising opportunities</li>
+            </ul>
+            <p>Annual fee: $1000</p>
+        </dialog>-->
+    </main>
+
+    <footer>
+        <div class="footer-col">
+            <img class="logo" src="favicon/favicon-v2.png" alt="Footer Logo">
+            <p>&copy; <span id="currentyear"></span>Chamber of Commerce | Irie Judicael Elvis | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+        <div class="footer-contact">
+            <h3>Abidjan Chamber of Commerce</h3>
+            <p>123 Main Street</p>
+            <p>Abidjan, Ivory Coast</p>
+            <p>123-456-7890</p>
+            <p>info@abidjanchamber.org</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-box-fill"></i>Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="ri-twitter-fill"></i>Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-fill"></i>Instagram</a></li>
+                <li><a href="https://www.Tiktok.com" target="_blank"><i class="ri-tiktok-fill"></i>Tik Tok</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/memberships-level.js" defer></script>
+</body>
+</html>

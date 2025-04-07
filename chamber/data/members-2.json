@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Mirk Inc.",
+        "address": "123 Main St, City, Country",
+        "phone": "+123 456 7890",
+        "image": "photo-1.webp",
+        "membership": "Gold",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "Niky flow",
+        "address": "456 Elm St, City, Country",
+        "phone": "+123 456 7891",
+        "image": "photo-2.webp",
+        "membership": "Silver",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "jason aka",
+        "address": "789 Oak St, City, Country",
+        "phone": "+123 456 7892",
+        "image": "photo-3.webp",
+        "membership": "Member",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "Julie Nira",
+        "address": "101 Pine St, City, Country",
+        "phone": "+123 456 7893",
+        "image": "photo-4.webp",
+        "membership": "Gold",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "Jacky Rolane.",
+        "address": "202 Maple St, City, Country",
+        "phone": "+123 456 7894",
+        "image": "photo-5.webp",
+        "membership": "Silver",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "Melissa Ita",
+        "address": "303 Cedar St, City, Country",
+        "phone": "+123 456 7895",
+        "image": "photo-6.webp",
+        "membership": "Member",
+        "website": "https://businesstwo.com"
+    },
+    {
+        "name": "Rose Mary",
+        "address": "404 Birch St, City, Country",
+        "phone": "+123 456 7896",
+        "image": "photo-7.webp",
+        "membership": "Gold",
+        "website": "https://businesstwo.com"
+    }
+]

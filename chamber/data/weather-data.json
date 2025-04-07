@@ -1,0 +1,77 @@
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 40,
+  "list": [
+    {
+      "dt": 1698764400,
+      "main": {
+        "temp": 30,
+        "feels_like": 32,
+        "temp_min": 29,
+        "temp_max": 31,
+        "pressure": 1012,
+        "humidity": 60
+      },
+      "weather": [
+        {
+          "id": 801,
+          "main": "Clouds",
+          "description": "few clouds",
+          "icon": "02d"
+        }
+      ],
+      "dt_txt": "2023-10-30 12:00:00"
+    },
+    {
+      "dt": 1698850800,
+      "main": {
+        "temp": 29,
+        "feels_like": 31,
+        "temp_min": 28,
+        "temp_max": 30,
+        "pressure": 1013,
+        "humidity": 65
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "dt_txt": "2023-10-31 12:00:00"
+    },
+    {
+      "dt": 1698937200,
+      "main": {
+        "temp": 28,
+        "feels_like": 30,
+        "temp_min": 27,
+        "temp_max": 29,
+        "pressure": 1011,
+        "humidity": 70
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "dt_txt": "2023-11-01 12:00:00"
+    }
+  ],
+  "city": {
+    "id": 2293538,
+    "name": "Abidjan",
+    "coord": {
+      "lat": 5.3094,
+      "lon": -4.0197
+    },
+    "country": "CI",
+    "timezone": 0
+  }
+}

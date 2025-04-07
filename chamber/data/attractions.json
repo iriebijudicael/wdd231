@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Dorty Shop",
+      "address": "123 Main St, City, State",
+      "description": "Brief description of the attraction",
+      "image": "images/photo-9.webp",
+      "button": "learn more"
+    },
+    {
+      "name": "Chocoty",
+      "address": "123 Main St, City, State",
+      "description": "Brief description of the attraction",
+      "image": "images/photo-10.webp",
+      "button": "learn more"
+    },
+    {
+      "name": "Sweety Bread",
+      "address": "123 Main St, City, State",
+      "description": "Brief description of the attraction",
+      "image": "images/photo-11.webp",
+      "button": "learn more"
+    },
+    {
+      "name": "Enjoy Jus",
+      "address": "123 Main St, City, State",
+      "description": "Brief description of the attraction",
+      "image": "images/photo-12.webp",
+      "button": "learn more"
+    },
+    {
+      "name": "Jus Star",
+      "address": "123 Main St, City, State",
+      "description": "Brief description of the attraction",
+      "image": "images/photo-13.webp",
+      "button": "learn more"
+    },
+    {
+      "name": "Outdoor Cafe",
+      "address": "123 Main St, City, State",
+      "description": "Brief description of the attraction",
+      "image": "images/photo-14.webp",
+      "button": "learn more"
+    },
+    {
+      "name": "flower shop",
+      "address": "123 Main St, City, State",
+      "description": "Brief description of the attraction",
+      "image": "images/photo-15.webp",
+      "button": "learn more"
+    },
+    {
+      "name": "fruit shop",
+      "address": "123 Main St, City, State",
+      "description": "Brief description of the attraction",
+      "image": "images/photo-16.webp",
+      "button": "learn more"
+    }
+  ]

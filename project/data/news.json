@@ -1,0 +1,61 @@
+{
+    "trending": [
+      {
+        "image": "../images/stockphoto.webp",
+        "title": "Dressing",
+        "description": "This is the first trending news article."
+      },
+      {
+        "image": "../images/food.webp",
+        "title": "Foods",
+        "description": "This is the second trending news article."
+      },
+      {
+        "image": "../images/adoption.webp",
+        "title": "Adoptions",
+        "description": "This is the first trending news article."        
+      },
+      {
+        "image": "../images/school.webp",
+        "title": "Educations",
+        "description": "This is the second trending news article."
+      },
+      {
+        "image": "../images/volunteer.webp",
+        "title": "Volunteers",
+        "description": "This is the second trending news article."
+      },
+      {
+        "image": "../images/resources.webp",
+        "title": "Other Resources",
+        "description": "This is the second trending news article."
+      }
+    ],
+    "editorsChoice": [
+      {
+        "image": "../images/school.jpeg",
+        "name": "School",
+        "description": "This is the first editor's choice news article."
+      },
+      {
+        "image": "../images/take-care.jpeg",
+        "name": "Editor 2"
+      },
+      {
+        "image": "../images/hospital.png",
+        "name": "Editor 3"
+      },
+      {
+        "image": "../images/stockphoto.webp",
+        "name": "Editor 4"
+      },
+      {
+        "image": "../images/stockphoto.webp",
+        "name": "Editor 5"
+      },
+      {
+        "image": "../images/stockphoto.webp",
+        "name": "Editor 6"
+      }
+    ]
+}
