@@ -3,7 +3,7 @@
       {
         "image": "../images/stockphoto.webp",
         "title": "Dressing",
-        "description": "This is the first trending news article."
+        "description": "Dressing is the first trending news article."
       },
       {
         "image": "../images/food.webp",
@@ -33,25 +33,24 @@
     ],
     "editorsChoice": [
       {
-        "image": "../images/school.jpeg",
-        "name": "School",
-        "description": "This is the first editor's choice news article."
+        "image": "../images/school.webp",
+        "name": "School"
       },
       {
         "image": "../images/take-care.jpeg",
-        "name": "Editor 2"
+        "name": "take care"
       },
       {
         "image": "../images/hospital.png",
-        "name": "Editor 3"
+        "name": "Hospital"
       },
       {
         "image": "../images/stockphoto.webp",
-        "name": "Editor 4"
+        "name": "sports"
       },
       {
         "image": "../images/stockphoto.webp",
-        "name": "Editor 5"
+        "name": "Outdoor"
       },
       {
         "image": "../images/stockphoto.webp",
