@@ -7,33 +7,33 @@
       },
       {
         "image": "../images/food.webp",
-        "title": "Foods",
-        "description": "This is the second trending news article."
+        "title": "Nutrition Projects",
+        "description": "Providing meals to thousands of children through our school feeding programs."
       },
       {
         "image": "../images/adoption.webp",
-        "title": "Adoptions",
-        "description": "This is the first trending news article."        
+        "title": "Adoption Services",
+        "description": "Helping orphaned children find loving homes through our adoption programs."        
       },
       {
         "image": "../images/school.webp",
-        "title": "Educations",
-        "description": "This is the second trending news article."
+        "title": "Education Initiatives",
+        "description": "New schools opening in rural communities to provide access to quality education."
       },
       {
         "image": "../images/volunteer.webp",
-        "title": "Volunteers",
-        "description": "This is the second trending news article."
+        "title": "Volunteer Opportunities",
+        "description": "Join our team of dedicated volunteers making a difference across Africa."
       },
       {
         "image": "../images/resources.webp",
-        "title": "Other Resources",
-        "description": "This is the second trending news article."
+        "title": "Healthcare Programs",
+        "description": "Mobile clinics reaching remote areas to provide essential medical care."
       }
     ],
     "editorsChoice": [
       {
-        "image": "../images/school.webp",
+        "image": "../images/school-1.webp",
         "name": "School"
       },
       {
