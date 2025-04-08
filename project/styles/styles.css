@@ -46,9 +46,10 @@
     align-items: start;
   }
   header .logo-icon {
-    width: 45px;
-    font-size: 24px;
+    width: 70px;
+    font-size: 2.5rem;
     font-weight: bold;
+    margin-left: 20px;
   }
   #hamburger {
     display: none;
