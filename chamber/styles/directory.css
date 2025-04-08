@@ -1,6 +1,6 @@
 :root {
     --color-primary: #1d347A;
-    --color-secondary: #879b03;
+    --color-secondary: #f7c50f;
     --accent-color1: #C7B7B3;
     --accent-color2: #F2ECE8;
     --accent-color3: #ba1708;
@@ -243,15 +243,11 @@ section h2 {
     margin: auto;
 }
 
-.logo p {
+.logo h1 {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 10px;
-}
-
-h1 {
-    font-size: 2rem;
     color: var(--color-primary);
+    margin-left: 10px;
 }
 
 .logo {
@@ -261,7 +257,7 @@ h1 {
 }
 
 .logo img {
-    width: 50px;
+    width: 60px;
     height: 50px;
 }
 
