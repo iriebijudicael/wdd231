@@ -45,7 +45,7 @@
     grid-template-columns: 44px auto 44px;
     align-items: start;
   }
-  header .logo-icon {
+  .logo-icon {
     width: 70px;
     font-size: 2.5rem;
     font-weight: bold;
@@ -120,9 +120,9 @@
     padding: 0 10vw 4vw 10vw;
   }
   .hero {
-    background: url('../images/african-children.avif') no-repeat center center/cover;
+    background: url('../images/african-children.webp') no-repeat center center/cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('../images/african-children.avif');
+      url('../images/african-children.webp');
     height: 400px;
     display: flex;
     align-items: center;
@@ -364,9 +364,11 @@
     margin: 0 auto;
     flex-wrap: wrap;
   }
-  .footer p {
+  .footer-col p {
+    text-align: start;
+  }
+  p  {
     text-align: center;
-    
   }
   #pre-footer {
     display: flex;
@@ -387,11 +389,7 @@
     padding: 4vw 10vw 4vw 10vw;
     margin: auto;
   }
-  footer .logo-icon {
-    width: 45px;
-    font-size: 24px;
-    font-weight: bold;
-  }
+  
   #pre-footer a {
     font-weight: 600;
     margin:0 20px;
@@ -402,9 +400,115 @@
     max-width: 990px;
     height: 60px;
   }
-  .footer-col li a {
+  footer li a {
     font-size: 1rem;
-    text-align: start;
-    list-style-type: lower-alpha;
     text-decoration: none;
+  }
+  footer li {
+    list-style: none;
+    text-align: start;
+  }
+
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    #hamburger {
+      display: block;
+      top: 16px;
+      right: 20px;
+      position: absolute;
+    }
+
+    
+    /* Convert nav to vertical layout */
+    #main-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+  }
+  
+  .nav-links {
+      flex-direction: column;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+  }
+  
+  /* Show nav header in mobile */
+  .nav-header {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+  }
+  
+  /* When menu is active */
+  #main-nav.active .nav-links {
+      max-height: 500px; /* Adjust based on your content */
+  }
+  
+  #main-nav.active #hamburger::before {
+      content: "\eb99"; /* Remixicon close icon */
+  }
+
+
+    .hero-content h1 {
+      font-size: 32px;
+    }
+    .hero-content p {
+      font-size: 18px;
+    }
+    .video-sidebar {
+      margin: 15px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    
+    #footer-card {
+      display: grid;
+      grid-template-columns: repeat( 2, 1fr);
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 24px;
+    }
+    .hero-content p {
+      font-size: 16px;
+    }
+    #footer-card {
+      display: block;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .video-sidebar {
+      flex-direction: column;
+      align-items: center;
+    }
+    .video-thumbnail {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-width: 320px) {
+    .hero-content h1 {
+      font-size: 20px;
+    }
+    .hero-content p {
+      font-size: 14px;
+    }
+    
+    .video-thumbnail img {
+      width: 80px;
+      height: 40px;
+    }
   }

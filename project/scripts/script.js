@@ -1,3 +1,34 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const nav = document.getElementById('main-nav');
+  const hamburger = document.getElementById('hamburger');
+  
+  hamburger.addEventListener('click', function() {
+      nav.classList.toggle('active');
+  });
+  
+  // Close menu when clicking on nav links (optional)
+  document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+              nav.classList.remove('active');
+              // Reset icon to menu if needed
+              hamburger.classList.remove('ri-close-line');
+              hamburger.classList.add('ri-menu-line');
+          }
+      });
+  });
+  
+  // Reset menu on window resize
+  window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+          nav.classList.remove('active');
+          // Reset icon to menu if needed
+          hamburger.classList.remove('ri-close-line');
+          hamburger.classList.add('ri-menu-line');
+      }
+  });
+});
+
 // Fetch and display trending news
 fetch('data/news.json')
   .then(response => response.json())

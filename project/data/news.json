@@ -3,12 +3,12 @@
       {
         "image": "../images/stockphoto.webp",
         "title": "Dressing",
-        "description": "Dressing is the first trending news article."
+        "description": "New initiative provides school uniforms and clothing to children in need across rural communities."
       },
       {
         "image": "../images/food.webp",
         "title": "Nutrition Projects",
-        "description": "Providing meals to thousands of children through our school feeding programs."
+        "description": "Expanding our nutrition initiatives to feed 10,000 more children this year."
       },
       {
         "image": "../images/adoption.webp",
@@ -34,27 +34,27 @@
     "editorsChoice": [
       {
         "image": "../images/school-1.webp",
-        "name": "School"
+        "name": "School Uniforms"
       },
       {
-        "image": "../images/take-care.jpeg",
+        "image": "../images/take-care.webp",
         "name": "take care"
       },
       {
-        "image": "../images/hospital.png",
+        "image": "../images/hospital.webp",
         "name": "Hospital"
       },
       {
-        "image": "../images/stockphoto.webp",
+        "image": "../images/transparent-sports.webp",
         "name": "sports"
       },
       {
-        "image": "../images/stockphoto.webp",
-        "name": "Outdoor"
+        "image": "../images/outdoor.webp",
+        "name": "Outdoor Education"
       },
       {
-        "image": "../images/stockphoto.webp",
-        "name": "Editor 6"
+        "image": "../images/child-protection.webp",
+        "name": "Child Protection"
       }
     ]
 }
