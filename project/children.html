@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hope for Africa's Children | Breaking News</title>
+    <title>Save The Children</title>
     <meta name="description" content="This site go about a nonprofit platform connecting donors with orphaned children in Africa, 
     clearly communicates the mission to support African orphans through sponsorship, donations, and community programs.">
     <meta name="author" content="Irie Judicael Elvis">
@@ -12,12 +12,13 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Hope for Africa's Children | Breaking News">
+    <meta property="og:title" content="Save The Children">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdn.prod.website-files.com/6511739743f2fc197f415f36/6512d5db896549c5e6771d6e_Yellow%20Green%20F4O.png">
     <meta property="og:url" content="https://iriebijudicael.github.io/wdd231/project/index.html">
     
     <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/children.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -45,78 +46,37 @@
     <nav id="main-nav">
         <div class="nav-header">Latest Updates</div>
         <ul class="nav-links">
-            <li><a href="index.html" id="action">Home</a></li>
-            <li><a href="children.html">Our Children</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="children.html" id="action">Our Children</a></li>
             <li><a href="volunteer.html">Volunteer</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <i id="hamburger" class="ri-menu-line"></i> 
     </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Save The Orphans</h1>
-                <p>Our team is working across Africa to bring you the most important stories affecting children and communities.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+    <main class="home-grid">
+        <section class="rivers-card">
+            <img class="card-img" src="rivers.jpg" alt="river in forest">
+            <img class="icon" src="river_icon.png" alt="river icon">
+            <h2>Rivers</h2>
         </section>
-  
-        <!-- Trending News Section -->
-        <section class="trending">
-            <h2>Breaking News: Major Event Happens Today</h2>
-            <div class="trending-grid" id="trending-grid">
-                <!-- Trending news cards will be dynamically inserted here -->
-            </div>
+        <section class="camping-card">
+            <img class="card-img" src="camping.jpg" alt="tent in mountains">
+            <img class="icon" src="fire_icon.png" alt="fire icon">
+            <h2>Camping</h2>
         </section>
-  
-        <!-- Editor's Choice Section -->
-        <section class="editors-choice"></section>
-            <h2>Our Programs & Resources</h2>
-            <div class="editors-grid" id="editors-grid"></div>
-                <!-- Editor's choice cards will be dynamically inserted here -->
-            </div>
+        <section class="rapids-card">
+            <img class="card-img" src="rapids.jpg" alt="rafting boat">
+            <img class="icon" src="oars.png" alt="oars icon">
+            <h2>Rapids</h2>
         </section>
-  
-        <!-- Advertisement Section -->
-        <marquee class="sponsores">
-            <img src="images/visa.webp" alt="visa Banner1">
-            <img src="images/ford.webp" alt="ford Banner2">
-            <img src="images/amazon.webp" alt="amazon Banner3">
-            <img src="images/Spotify.webp" alt="spotify Banner4">
-            <img src="images/Changan.webp" alt="Changan Banner5">
-            <img src="images/coca-cola.webp" alt="coca-cola Banner6">
-            <img src="images/disney.webp" alt="disney Banner7">
-            <img src="images/coca-cola.webp" alt="coca-cola Banner6">
-            <img src="images/disney.webp" alt="disney Banner7">
-            <img src="images/nike.webp" alt="nike Banner8">
-            <img src="images/mastercard.webp" alt="mastercard Banner9">
-            <img src="images/emirates.webp" alt="emirates Banner10">
-        </marquee>
-  
-        <!-- Recent Videos Section -->
-        <section class="recent-videos">
-            <h2>Recent Videos</h2>
-            <div class="video-container">
-                <video class="main-video" width="200" controls>
-                    <source src="images/video2.mp4" type="video/mp4">
-                </video>
-                <div class="video-sidebar">
-                    <video class="video-thumbnail" width="200" controls>
-                      <source src="images/video3.mp4" alt="Video/mp4">
-                      <p>Video Title 1</p>
-                    </video>
-                    <video class="video-thumbnail" width="200" controls>
-                      <source src="images/video4.mp4" alt="Video/mp4">
-                      <p>Video Title 2</p>
-                    </video>
-                    <video class="video-thumbnail" width="200" controls>
-                      <source src="images/videoplayback (2).mp4" alt="Video/mp4">
-                      <p>Video Title 3</p>
-                    </video>
-                </div>
-            </div>
+        <div id="background"></div>
+        <img class="mountains" src="mountains.jpg" alt="Misty mountains">
+        <section class="msg">
+            <h2>More Than Just The Thrill</h2>
+            <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than
+                just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors. </p>
+            <a class='join' href="rivers.html">Join Us</a>
         </section>
     </main>
   

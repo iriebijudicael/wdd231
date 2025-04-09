@@ -1,0 +1,61 @@
+
+.card-img {
+    border: 10px solid #151516;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;    
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);    
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: center;
+}
+main section img {
+    box-sizing: border-box;
+}
+.card-img, .mountains {
+    width: 100%;   
+}
+.icon {
+    width:   80px;
+    padding: 10px 0 0 0;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin:     200px 0;
+    text-align: center;
+}
+.rivers-card {
+    grid-column: 2/4;
+    grid-row:    2;
+}
+
+.camping-card {
+    grid-column: 5/7;
+    grid-row:    2;
+}
+
+.rapids-card {
+    grid-column: 8/10;
+    grid-row:    2;
+}
+
+.card-img {
+    border:     10px solid #000;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img:hover {
+    opacity:   .6;
+    transform: scale(1.1);
+}
+
+.mountains {
+    grid-column: 2/7;
+    grid-row:    5/8;
+    box-shadow:  5px 5px 10px #6f7364;
+}
