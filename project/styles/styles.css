@@ -414,7 +414,6 @@
   @media (max-width: 768px) {
     header {
       flex-direction: column;
-      align-items: center;
     }
     #hamburger {
       display: block;
@@ -422,7 +421,6 @@
       right: 20px;
       position: absolute;
     }
-
     
     /* Convert nav to vertical layout */
     #main-nav {
