@@ -474,6 +474,9 @@
       justify-content: center;
       align-items: center;
     }
+    .img-card {
+      width: 30%;
+    }
   }
 
   @media (max-width: 480px) {
