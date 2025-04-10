@@ -262,7 +262,7 @@ img[data-src] {
 }
 
 /* Special Cases for Small Mobile Devices */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
     .gallery-grid {
         grid-template-columns: 1fr;
     }
