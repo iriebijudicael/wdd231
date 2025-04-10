@@ -55,28 +55,74 @@
     </nav>
 
     <main class="home-grid">
-        <section class="rivers-card">
-            <img class="card-img" src="rivers.jpg" alt="river in forest">
-            <img class="icon" src="river_icon.png" alt="river icon">
-            <h2>Rivers</h2>
+        <!-- Programs Section -->
+        <section class="programs-section">
+            <h2>Our Current Initiatives</h2>
+            <div class="program-grid">
+                <div class="program-card">
+                    <img src="images/photop2.jpg" alt="School Uniform Drive" loading="lazy">
+                    <h3>Uniforms for Education</h3>
+                    <p>Providing school uniforms to 5,000 children in rural communities to boost school attendance and dignity.</p>
+                    <button class="cta-button" onclick="showInitiative('uniforms')">Support This Cause</button>
+                </div>
+                <div class="program-card">
+                    <img src="images/healthp2.jpg" alt="Medical Outreach" loading="lazy">
+                    <h3>Mobile Health Clinics</h3>
+                    <p>Quarterly medical camps offering free checkups, vaccinations and health education in remote villages.</p>
+                    <button class="cta-button" onclick="showInitiative('medical')">Volunteer With Us</button>
+                </div>
+            </div>
         </section>
-        <section class="camping-card">
-            <img class="card-img" src="camping.jpg" alt="tent in mountains">
-            <img class="icon" src="fire_icon.png" alt="fire icon">
-            <h2>Camping</h2>
+    
+        <!-- Featured Campaign -->
+        <section class="featured-campaign">
+            <h2>Emergency Relief Operation</h2>
+            <div class="campaign-hero">
+                <img src="images/crisisp2.png" alt="Flood relief efforts" loading="lazy">
+                <div class="campaign-details">
+                    <p>Over 10,000 displaced families need urgent supplies in Malawi. Our team is on the ground delivering:</p>
+                    <ol>
+                        <li>Clean water and sanitation kits</li>
+                        <li>Emergency food packages</li>
+                        <li>Temporary shelter materials</li>
+                    </ol>
+                    <button class="cta-button urgent" onclick="showCampaign('flood')">Donate Now</button>
+                </div>
+            </div>
         </section>
-        <section class="rapids-card">
-            <img class="card-img" src="rapids.jpg" alt="rafting boat">
-            <img class="icon" src="oars.png" alt="oars icon">
-            <h2>Rapids</h2>
+    
+        <!-- Impact Gallery -->
+        <section class="impact-gallery">
+            <h2>See Your Impact</h2>
+            <p>Blessing, age 8, now attending school regularly <br>The Mwale family receiving monthly nutrition support <br>New borehole serving 300 villagers in Kenya</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/child-school.webp" alt="Child in classroom" loading="lazy">
+                    <img src="images/family-meal.webp" alt="Home receiving food" loading="lazy">
+                    <img src="images/water-project.webp" alt="Clean" loading="lazy">
+                    <img src="images/water-project.webp" alt="Clean water project" loading="lazy">
+                </div>
+            </div>
         </section>
-        <div id="background"></div>
-        <img class="mountains" src="mountains.jpg" alt="Misty mountains">
-        <section class="msg">
-            <h2>More Than Just The Thrill</h2>
-            <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than
-                just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors. </p>
-            <a class='join' href="rivers.html">Join Us</a>
+    
+        <!-- Call to Action -->
+        <section class="mission-call">
+            <div class="mission-content">
+                <h2>Every Child Deserves Hope</h2>
+                <p>Join us in creating sustainable change across African communities. Your support provides:</p>
+                <ul>
+                    <li>Education for orphaned children</li>
+                    <li>Healthcare for vulnerable families</li>
+                    <li>Economic empowerment programs</li>
+                </ul>
+                <div class="action-buttons">
+                    <a class="cta-button primary" href="donate.html">Donate Today</a>
+                    <a class="cta-button secondary" href="volunteer.html">Become a Volunteer</a>
+                </div>
+            </div>
+            <div class="mission-image">
+                <img src="images/hopeEffectp2.png" alt="Smiling African children" loading="lazy">
+            </div>
         </section>
     </main>
   

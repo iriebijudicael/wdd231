@@ -1,53 +1,94 @@
 
-.card-img {
-    border: 10px solid #151516;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;    
-}
-.card-img:hover {
-    opacity: .6;
-    transform: scale(1.1);    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
 }
 
-main {
+.section {
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+/* Program Cards */
+.program-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    justify-content: center;
-}
-main section img {
-    box-sizing: border-box;
-}
-.card-img, .mountains {
-    width: 100%;   
-}
-.icon {
-    width:   80px;
-    padding: 10px 0 0 0;
-}
-.rivers-card, .camping-card, .rapids-card {
-    margin:     200px 0;
-    text-align: center;
-}
-.rivers-card {
-    grid-column: 2/4;
-    grid-row:    2;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
-.camping-card {
-    grid-column: 5/7;
-    grid-row:    2;
+.program-card {
+    padding: 12px 10px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.program-card img {
+    width: 100%;
+    height: 200px;
 }
 
-.rapids-card {
-    grid-column: 8/10;
-    grid-row:    2;
+.program-card:hover {
+    transform: translateY(-5px);
 }
 
-.card-img {
-    border:     10px solid #000;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
+/* Campaign Section */
+.campaign-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
+
+/* Impact Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Mission Call-to-Action */
+.mission-call {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 2rem;
+}
+
+/* Buttons */
+.cta-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta-button.primary {
+    background: #2c3e50;
+    color: white;
+}
+
+.cta-button.secondary {
+    background: white;
+    color: #2c3e50;
+    border: 2px solid #2c3e50;
+}
+
+.cta-button.urgent {
+    background: #e74c3c;
+    color: white;
+}
+
 
 .card-img:hover {
     opacity:   .6;
