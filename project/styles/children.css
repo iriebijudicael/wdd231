@@ -51,9 +51,9 @@ h2 {
 /* Campaign Section */
 .campaign-hero {
     display: flex;
-    background: url('../images/crisisp2.png') no-repeat center center/cover;
+    background: url('../images/crisisp2.webp') no-repeat center center/cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../images/crisisp2.png');
+    url('../images/crisisp2.webp');
     height: 300px;
     align-items: center;
     justify-content: center;
@@ -150,6 +150,25 @@ h2 {
     background: #e74c3c;
     color: white;
 }
+/* Lazy loading styles */
+.lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: #f0f0f0;
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+}
+
+/* Placeholder styling */
+img[data-src] {
+    min-height: 200px;
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+}
+
 
 
 
@@ -251,9 +270,14 @@ h2 {
     .gallery-item {
         grid-template-columns: 1fr;
     }
+    .mission-call {
+        display: block;
+        flex-direction: column;
+    }
     .mission-call img {
         max-height: 40vh;
     }
+   
     
     .program-card {
         padding: 10px;

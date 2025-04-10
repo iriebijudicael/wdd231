@@ -61,3 +61,42 @@ fetch('data/news.json')
       editorsGrid.appendChild(card);
     });
   });
+
+
+    // Lazy loading implementation For Page 2
+    document.addEventListener("DOMContentLoaded", function() {
+      const lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
+      
+      if ("IntersectionObserver" in window) {
+          let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+              entries.forEach(function(entry) {
+                  if (entry.isIntersecting) {
+                      let lazyImage = entry.target;
+                      lazyImage.src = lazyImage.dataset.src;
+                      lazyImage.classList.add("loaded");
+                      lazyImageObserver.unobserve(lazyImage);
+                      
+                      // Remove placeholder background after load
+                      lazyImage.onload = function() {
+                          lazyImage.style.background = "none";
+                      };
+                  }
+              });
+          }, {
+              rootMargin: "100px 0px" // Load images 100px before they enter viewport
+          });
+          
+          lazyImages.forEach(function(lazyImage) {
+              lazyImageObserver.observe(lazyImage);
+          });
+      } else {
+          // Fallback for browsers without IntersectionObserver
+          lazyImages.forEach(function(lazyImage) {
+              lazyImage.src = lazyImage.dataset.src;
+          });
+      }
+      
+      // Preload important above-the-fold image
+      const preloadImage = new Image();
+      preloadImage.src = "images/flood-relief.webp";
+  });
