@@ -234,7 +234,7 @@ img[data-src] {
     }
 
     .gallery-item {
-        display: grid;
+        display: block;
         flex-direction: column;
         flex-wrap: wrap;
         margin-bottom: 20px;
