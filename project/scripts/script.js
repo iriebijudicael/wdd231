@@ -29,74 +29,69 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Fetch and display trending news
-fetch('data/news.json')
-  .then(response => response.json())
-  .then(data => {
-    const trendingGrid = document.getElementById('trending-grid');
-    data.trending.forEach(news => {
-      const card = document.createElement('div');
-      card.classList.add('trending-card');
-      card.innerHTML = `
-        <img src="images/${news.image}" alt="${news.title}">
-        <h2>${news.title}</h2>
-        <p>${news.description}</p>
-      `;
-      trendingGrid.appendChild(card);
+// Combined Fetch and Lazy Loading Script
+document.addEventListener('DOMContentLoaded', function() {
+  // Fetch news data once and process both sections
+  fetch('data/news.json')
+    .then(response => response.json())
+    .then(data => {
+      // 1. Process Trending News with Lazy Loading
+      const trendingGrid = document.getElementById('trending-grid');
+      data.trending.forEach(news => {
+        const card = document.createElement('div');
+        card.classList.add('trending-card');
+        card.innerHTML = `
+          <img data-src="images/${news.image}" alt="${news.title}" class="lazy-load">
+          <h2>${news.title}</h2>
+          <p>${news.description}</p>
+        `;
+        trendingGrid.appendChild(card);
+      });
+
+      // 2. Process Editor's Choice with Lazy Loading
+      const editorsGrid = document.getElementById('editors-grid');
+      data.editorsChoice.forEach(editor => {
+        const card = document.createElement('div');
+        card.classList.add('editor-card');
+        card.innerHTML = `
+          <img data-src="images/${editor.image}" alt="${editor.name}" class="lazy-load">
+          <p>${editor.name}</p>
+        `;
+        editorsGrid.appendChild(card);
+      });
+
+      // Initialize lazy loading for all images
+      initLazyLoading();
+    })
+    .catch(error => console.error('Error loading news data:', error));
+
+  // Lazy Loading Functionality
+  function initLazyLoading() {
+    const lazyImages = document.querySelectorAll('img.lazy-load');
+    
+    // Skip if IntersectionObserver isn't supported
+    if (!('IntersectionObserver' in window)) {
+      lazyImages.forEach(img => {
+        img.src = img.dataset.src;
+      });
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.onload = () => img.classList.add('loaded');
+          observer.unobserve(img);
+        }
+      });
+    }, {
+      rootMargin: '100px', // Start loading 100px before entering viewport
+      threshold: 0.1
     });
-  });
 
-// Fetch and display editor's choice
-fetch('data/news.json')
-  .then(response => response.json())
-  .then(data => {
-    const editorsGrid = document.getElementById('editors-grid');
-    data.editorsChoice.forEach(editor => {
-      const card = document.createElement('div');
-      card.classList.add('editor-card');
-      card.innerHTML = `
-        <img src="images/${editor.image}" alt="${editor.name}">
-        <p>${editor.name}</p>
-      `;
-      editorsGrid.appendChild(card);
-    });
-  });
+    lazyImages.forEach(img => observer.observe(img));
+  }
+});
 
-
-// Lazy loading implementation For Page 2
-    /*document.addEventListener("DOMContentLoaded", function() {
-      const lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
-      
-      if ("IntersectionObserver" in window) {
-          let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-              entries.forEach(function(entry) {
-                  if (entry.isIntersecting) {
-                      let lazyImage = entry.target;
-                      lazyImage.src = lazyImage.dataset.src;
-                      lazyImage.classList.add("loaded");
-                      lazyImageObserver.unobserve(lazyImage);
-                      
-                      // Remove placeholder background after load
-                      lazyImage.onload = function() {
-                          lazyImage.style.background = "none";
-                      };
-                  }
-              });
-          }, {
-              rootMargin: "100px 0px" // Load images 100px before they enter viewport
-          });
-          
-          lazyImages.forEach(function(lazyImage) {
-              lazyImageObserver.observe(lazyImage);
-          });
-      } else {
-          // Fallback for browsers without IntersectionObserver
-          lazyImages.forEach(function(lazyImage) {
-              lazyImage.src = lazyImage.dataset.src;
-          });
-      }
-      
-      // Preload important above-the-fold image
-      const preloadImage = new Image();
-      preloadImage.src = "images/flood-relief.webp";
-  });*/

@@ -411,6 +411,16 @@
     text-align: start;
   }
 
+  /* Add to your stylesheet */
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: #f0f0f0;
+}
+
+.lazy-load.loaded {
+  opacity: 1;
+}
 
 
   .hero-content {
