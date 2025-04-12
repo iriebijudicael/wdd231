@@ -192,6 +192,9 @@ img[data-src] {
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
     }
+    .gallery-item {
+       margin: 25px;
+    }
     .gallery-item img{
        width: 100%;
        height: 20vh;
@@ -223,26 +226,38 @@ img[data-src] {
 
 
 /* Special Cases for Small Mobile Devices */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
     .gallery-grid {
         display: block;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
     }
 
     .gallery-item {
-        display: block;
-        grid-template-columns: 1fr;
+        display: grid;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
     }
     .mission-call {
         display: block;
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
     .mission-call img {
-        max-height: 40vh;
+        width: 100%;
+        max-height: 30vh;
     }
    
     .program-card {
         padding: 10px;
         margin: 0 5px;
+    }
+
+    .mission-image {
+        display: block;
+    }
+
+    .mission-content {
+        display: block;
     }
 }
