@@ -63,8 +63,8 @@ fetch('data/news.json')
   });
 
 
-    // Lazy loading implementation For Page 2
-    document.addEventListener("DOMContentLoaded", function() {
+// Lazy loading implementation For Page 2
+    /*document.addEventListener("DOMContentLoaded", function() {
       const lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
       
       if ("IntersectionObserver" in window) {
@@ -99,4 +99,4 @@ fetch('data/news.json')
       // Preload important above-the-fold image
       const preloadImage = new Image();
       preloadImage.src = "images/flood-relief.webp";
-  });
+  });*/
