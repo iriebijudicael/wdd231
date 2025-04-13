@@ -124,7 +124,7 @@
   .hero {
     background: url('../images/african-children.webp') no-repeat center center/cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('../images/african-children.webp');
+    url('../images/african-children.webp');
     height: 400px;
     display: flex;
     align-items: center;
@@ -140,6 +140,7 @@
   }
   .hero-content h1 {
     font-size: 48px;
+    color: var(--font-color-light);
     margin-bottom: 10px;
   }
   
@@ -166,7 +167,7 @@
   padding: 20px;
   margin: 20px auto;
   border-radius: 5px;
-}*/
+}
 
 .weather h2, p {
   font-weight: 600;
@@ -211,7 +212,7 @@
 .forecast-card img {
   width: 50px;
   height: 50px;
-}
+}*/
 
   /* Trending News Section */
   .trending {
@@ -474,6 +475,115 @@
 }
 
 
+
+/* Dialog Styling */
+/* Contact Form - Matching Join Page Style */
+#contact-dialog {
+  margin: 30px;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+}
+#contact-form {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact-form h2 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+#close-dialog {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  color: #666;
+}
+
+#close-dialog:hover {
+  color: #333;
+}
+
+#contact-form label {
+  display: block;
+  text-align: start;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#contact-form button[type="submit"] {
+  font-weight: 600;
+  color: #0022ff;
+  background: none;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  justify-self: start;
+  margin-top: 0.5rem;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #ccc;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  #contact-form {
+      padding: 2rem;
+  }
+  
+  #contact-form .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+  }
+  
+  #contact-form .full-width {
+      grid-column: span 2;
+  }
+}
+
+
+
   /* Media Queries */
   @media (max-width: 768px) {
     header {
@@ -510,14 +620,12 @@
   
   /* When menu is active */
   #main-nav.active .nav-links {
-      max-height: 500px; /* Adjust based on your content */
+      max-height: 500px; 
   }
   
   #main-nav.active #hamburger::before {
-      content: "\eb99"; /* Remixicon close icon */
+      content: "\eb99"; 
   }
-
-
     .hero-content h1 {
       font-size: 32px;
     }

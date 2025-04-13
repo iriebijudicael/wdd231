@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Submission Received</title>
+        <meta name="description" content="This site go about a nonprofit platform connecting donors with orphaned children in Africa, 
+        clearly communicates the mission to support African orphans through sponsorship, donations, and community programs.">
+        <meta name="author" content="Irie Judicael Elvis">
+    
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+        <!-- Facebook Meta Tags -->
+        <meta property="og:title" content="Form Submission Received">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://cdn.prod.website-files.com/6511739743f2fc197f415f36/6512d5db896549c5e6771d6e_Yellow%20Green%20F4O.png">
+        <meta property="og:url" content="https://iriebijudicael.github.io/wdd231/project/index.html">
+        
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <style>
+            /* Match your existing styles */
+            body {
+                font-family: system-ui, sans-serif;
+                line-height: 1.6;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+            h1 { color: #0022ff; }
+            a {
+                display: inline-block;
+                margin-top: 1rem;
+                color: #0022ff;
+                text-decoration: none;
+                font-weight: 600;
+           }
+            a:hover { text-decoration: underline; }
+            .submission-details {
+                background: #f9f9f9;
+                padding: 1rem;
+                border-radius: 8px;
+                margin-top: 2rem;
+            }
+        </style>
+</head>
+<body>
+    <h1>Thank You!</h1>
+    <p>We've received your message and will respond shortly.</p>
+    <a href="index.html">Return Home</a>
+    
+    <div class="submission-details">
+        <h2>Your Submission:</h2>
+        <p id="submission-data">Loading your information...</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const submissionData = document.getElementById('submission-data');
+            
+            if(params.toString()) {
+                let html = `
+                    <p><strong>Name:</strong> ${params.get('name') || 'Not provided'}</p>
+                    <p><strong>Email:</strong> ${params.get('email') || 'Not provided'}</p>
+                    <p><strong>Message:</strong> ${params.get('message') || 'Not provided'}</p>
+                `;
+                submissionData.innerHTML = html;
+            } else {
+                submissionData.textContent = "No submission data found.";
+            }
+        });
+    </script>
+</body>
+</html>

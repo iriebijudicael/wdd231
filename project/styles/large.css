@@ -68,3 +68,73 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+
+
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+.course-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.course-code {
+    font-weight: bold;
+    color: #2c3e50;
+}
+.course-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+.course-credits {
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+.course-description {
+    margin: 15px 0;
+}
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 15px;
+}
+.tech-item {
+    background: #e0f7fa;
+    color: #00796b;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+.completed {
+    background-color: #e8f5e9;
+    border-left: 4px solid #2e7d32;
+}
+.ongoing {
+    background-color: #fff8e1;
+    border-left: 4px solid #ff8f00;
+}
+.certificate {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 10px;
+}

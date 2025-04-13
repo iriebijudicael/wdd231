@@ -32,12 +32,29 @@
             <!--<h1>Orphans</h1>-->
         </div>
         
-        <form method="post" action="login.php">
-            <input type="text" class="search" placeholder="Search">
-            <i id="search" class="ri-search-2-line"></i>
-            <button><i class="ri-user-fill"></i>Login</button>
-            <button><i class="ri-user-fill"></i>Sign Up</button>
-        </form>
+        <!-- Trigger Button -->
+         
+        <button id="open-dialog" class="login-btn"><i class="ri-user-fill"></i>Join</button>
+  
+    <!-- Dialog Element -->
+    <dialog id="contact-dialog">
+      <form id="contact-form" method="dialog">
+        <button id="close-dialog" type="button" aria-label="Close">❌</button>
+      
+        <h2>Contact Us</h2>
+      
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      
+        <button type="submit">Send Message</button>
+      </form>
+    </dialog>
          
     </header>
 
@@ -46,15 +63,19 @@
         <div class="nav-header">Latest Updates</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="children.html" id="action">Our Children</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="children.html">Our Children</a></li>
+            <li><a href="volunteer.html" id="action">Volunteer</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <i id="hamburger" class="ri-menu-line"></i> 
     </nav>
 
     <main class="home-grid">
-        <!-- Programs Section -->
+        <h1>Our Volunteer Team</h1>
+        <div id="courses-container" class="courses-container">
+            <!-- Programs Section -->
+        </div>
+        
 
     </main>
 
@@ -117,6 +138,7 @@
     </footer>
   
     <!-- JavaScript -->
-    <script src="scripts/script.js" defer></script>
+    <script defer src="scripts/script.js" ></script>
+    <script type="module" src="scripts/volunteer.js" defer></script>
 </body>
 </html>

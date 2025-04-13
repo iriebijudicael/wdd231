@@ -1,5 +1,5 @@
 // Membership data in JSON format
-const membershipData = {
+/*const membershipData = {
     cards: [
       {
         type: "np",
@@ -61,7 +61,7 @@ const membershipData = {
         feeNote: "Annual fee: $1000"
       }
     ]
-  };
+  };*/
   
   // Function to create membership cards
   function createMembershipCards() {

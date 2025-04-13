@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
 // Combined Fetch and Lazy Loading Script
 document.addEventListener('DOMContentLoaded', function() {
   // Fetch news data once and process both sections
@@ -93,5 +94,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
     lazyImages.forEach(img => observer.observe(img));
   }
+});
+
+
+const dialog = document.getElementById('contact-dialog');
+const openBtn = document.getElementById('open-dialog');
+const closeBtn = document.getElementById('close-dialog');
+
+// Open dialog
+openBtn.addEventListener('click', () => dialog.showModal());
+
+// Close dialog
+closeBtn.addEventListener('click', () => dialog.close());
+
+// Form submission
+document.getElementById('contact-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  // Get form data
+  const formData = new FormData(e.target);
+  const data = Object.fromEntries(formData);
+  
+  console.log('Form submitted:', data);
+  
+  // Here you would typically send data to a server
+  // fetch('/submit-form', { method: 'POST', body: formData })
+  
+  // Close dialog after submission
+  dialog.close();
+  
+  // Optional: Show success message
+  alert('Message sent successfully!');
 });
 
