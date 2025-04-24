@@ -18,6 +18,16 @@ hamburger.addEventListener('click', () => {
 });
 
 
+// data.js
+export const userData = {
+    name: "John Doe",
+    age: 30,
+    email: "john@example.com"
+  };
+  
+  // Alternative for multiple exports:
+  // export const products = [...];
+
 export const courses = [
     {
         subject: 'CSE',
