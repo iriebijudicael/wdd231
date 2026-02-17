@@ -4,7 +4,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 // API URL for Trier, Germany
-const url = 'https://linkedin-jobs-search.p.rapidapi.com/';
+const url = `https://api.openweathermap.org/data/2.5/weather?p=Abidjan&lat=5.35&lon=-4.02&units=metric&appid=0edd533614458f51faad6081561a82ca`;
 
 // Fetch weather data
 async function apiFetch() {
